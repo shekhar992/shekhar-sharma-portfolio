@@ -76,9 +76,11 @@ PREVIOUS ROLES:
    - Prevented $2M delay penalty through accelerated user onboarding
    - Maintained 92% sprint velocity consistency across 3 time zones
 
-3. Product Manager - CRMNEXT (2017-2019):
-   - Increased platform adoption by 35% across 8 banking clients
-   - Led 20+ client workshops, reduced customization time by 40%
+3. Product Manager - CRMNEXT SaaS Platform (2017-2019):
+   - Owned end-to-end lead conversion cycle: RFPs, demos, SDLC, cloud deployment for SMB clients (<100 users)
+   - Managed Services, Media & Insurance domain clients
+   - Promoted to enterprise accounts—re-imagined customer service journey for India's largest insurance provider
+   - Led 20+ product demos and requirement workshops
 
 4. Associate Product Owner - Bombay Stock Exchange (2016-2017):
    - 98% defect-free deployment rate across 5 releases
