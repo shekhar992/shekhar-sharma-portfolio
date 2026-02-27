@@ -89,11 +89,21 @@ PREVIOUS ROLES:
 SIDE PROJECT:
 Smart Release Planner - Built and deployed full-stack release planning SaaS in 3 weeks using React, TypeScript, and AI-assisted development. Features release confidence scoring algorithm with 85% accuracy, achieving 500+ hours of simulated capacity analysis.
 
-SKILLS:
-- Product Management: Strategy, PI Planning, Stakeholder Alignment, OKRs, Cross-Functional Leadership
-- Technical: GenAI/LLMs, Enterprise SaaS, Mobile (iOS/Android), Regulated Healthcare (SAMD, FDA 21 CFR Part 11)
-- Methodologies: SAFe Agile, Scrum, Design Thinking, Lean Product Development
-- Tools: Figma, JIRA, Confluence, SQL, API Design, AI-Powered Prototyping
+SKILLS & EXPERTISE:
+- Product Management: Product Strategy, Roadmap Planning, Stakeholder Management, OKRs & KPIs, PI Planning, Product-Market Fit, User Research, A/B Testing, Go-to-Market, Cross-Functional Leadership
+- Technical & Platforms: GenAI/LLMs, Enterprise SaaS, Mobile Apps (iOS/Android), API Design, Cloud Platforms, SAMD Compliance, FDA 21 CFR Part 11, Data Analytics
+- Methodologies & Frameworks: SAFe Agile, Scrum, Lean Product Development, Design Thinking, Jobs-to-be-Done, Continuous Discovery
+- Tools & Prototyping: Figma, JIRA, Confluence, SQL, Miro, Amplitude, AI-Powered Prototyping, Vibecoding
+
+DOMAIN EXPERIENCE:
+Healthcare, Pharmaceutical, Retail, Financial Services, Insurance, Media
+
+KEY STRENGTHS:
+- 0→1 Product Launches
+- Rapid Prototyping & MVPs
+- Data-Driven Decision Making
+- Cross-Functional Leadership
+- Regulated Product Delivery
 
 CERTIFICATIONS:
 - Certified SAFe® 6 Agilist (2025)

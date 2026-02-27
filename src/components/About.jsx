@@ -134,22 +134,87 @@ export default function About() {
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           <div className="apple-card">
-            <h3 className="text-2xl font-semibold mb-6">Expertise</h3>
-            <div className="flex flex-wrap gap-3">
-              {['Product Strategy', 'PI Planning', 'GenAI/LLMs', 'Enterprise SaaS', 'Mobile', 'SAMD', 'SAFe Agile', 'Design Thinking', 'OKRs', 'API Design'].map((skill) => (
-                <span key={skill} className="px-4 py-2 bg-zinc-800 rounded-full text-sm font-medium text-zinc-300">
-                  {skill}
-                </span>
-              ))}
+            <h3 className="text-2xl font-semibold mb-8">Expertise</h3>
+            
+            {/* Product Management */}
+            <div className="mb-6">
+              <p className="text-sm font-semibold text-zinc-400 mb-3">Product Management</p>
+              <div className="flex flex-wrap gap-2">
+                {['Product Strategy', 'Roadmap Planning', 'Stakeholder Management', 'OKRs & KPIs', 'PI Planning', 'Product-Market Fit', 'User Research', 'A/B Testing', 'Go-to-Market'].map((skill) => (
+                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Technical & Platforms */}
+            <div className="mb-6">
+              <p className="text-sm font-semibold text-zinc-400 mb-3">Technical & Platforms</p>
+              <div className="flex flex-wrap gap-2">
+                {['GenAI/LLMs', 'Enterprise SaaS', 'Mobile Apps (iOS/Android)', 'API Design', 'Cloud Platforms', 'SAMD Compliance', 'FDA 21 CFR Part 11', 'Data Analytics'].map((skill) => (
+                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Methodologies */}
+            <div className="mb-6">
+              <p className="text-sm font-semibold text-zinc-400 mb-3">Methodologies & Frameworks</p>
+              <div className="flex flex-wrap gap-2">
+                {['SAFe Agile', 'Scrum', 'Lean Product Development', 'Design Thinking', 'Jobs-to-be-Done', 'Continuous Discovery'].map((skill) => (
+                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Tools & Prototyping */}
+            <div>
+              <p className="text-sm font-semibold text-zinc-400 mb-3">Tools & Prototyping</p>
+              <div className="flex flex-wrap gap-2">
+                {['Figma', 'JIRA', 'Confluence', 'SQL', 'Miro', 'Amplitude', 'AI-Powered Prototyping', 'Vibecoding'].map((skill) => (
+                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 
           <div className="apple-card">
-            <h3 className="text-2xl font-semibold mb-6">Certifications</h3>
+            <h3 className="text-2xl font-semibold mb-8">Certifications</h3>
             <ul className="space-y-4">
               <li className="text-zinc-300 text-lg">Certified SAFe® 6 Agilist</li>
               <li className="text-zinc-300 text-lg">Certified Scrum Product Owner (CSPO)</li>
             </ul>
+
+            {/* Domain Experience */}
+            <div className="mt-10">
+              <h3 className="text-2xl font-semibold mb-6">Domain Experience</h3>
+              <div className="flex flex-wrap gap-2">
+                {['Healthcare', 'Pharmaceutical', 'Retail', 'Financial Services', 'Insurance', 'Media'].map((domain) => (
+                  <span key={domain} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                    {domain}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Key Strengths */}
+            <div className="mt-10">
+              <h3 className="text-2xl font-semibold mb-6">Key Strengths</h3>
+              <ul className="space-y-3">
+                <li className="text-zinc-300">🚀 0→1 Product Launches</li>
+                <li className="text-zinc-300">⚡ Rapid Prototyping & MVPs</li>
+                <li className="text-zinc-300">📊 Data-Driven Decision Making</li>
+                <li className="text-zinc-300">🎯 Cross-Functional Leadership</li>
+                <li className="text-zinc-300">🔧 Regulated Product Delivery</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
