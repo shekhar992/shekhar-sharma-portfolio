@@ -1,30 +1,51 @@
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#journey', label: 'Journey' },
-    { href: '#product', label: 'Product' },
+    { href: '#about', label: 'Experience' },
     { href: '#contact', label: 'Contact' },
+    { href: '#product', label: 'Side Project' },
   ];
 
+  const techStack = ['React', 'TypeScript', 'Vite', 'Tailwind', 'OpenAI'];
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <a href="#hero" className="text-xl font-bold text-gray-900 hover:text-primary transition-colors">
-            Shekhar Sharma
-          </a>
+          <div className="flex items-center gap-4">
+            <a href="#hero" className="text-xl font-bold text-white hover:text-purple-400 transition-colors">
+              Shekhar Sharma
+            </a>
+            {/* Tech Stack Badges - Hidden on mobile */}
+            <div className="hidden lg:flex items-center gap-2">
+              <span className="text-gray-500 text-xs">•</span>
+              <div className="flex items-center gap-1.5">
+                {techStack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2 py-0.5 bg-purple-500/10 border border-purple-500/20 rounded text-xs font-medium text-purple-300 hover:bg-purple-500/20 transition-colors"
+                  >
+                    {tech}
+                  </span>
+                ))}
+                <span className="px-2 py-0.5 bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded text-xs font-medium text-purple-300 flex items-center gap-1 animate-pulse">
+                  <Sparkles size={10} />
+                  AI-Powered
+                </span>
+              </div>
+            </div>
+          </div>
 
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-primary transition-colors font-medium"
+                className="text-gray-300 hover:text-white transition-colors font-medium"
               >
                 {link.label}
               </a>
@@ -33,7 +54,7 @@ export default function Navigation() {
               href="https://www.linkedin.com/in/sheksharma"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors font-medium"
+              className="px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:shadow-lg hover:shadow-purple-500/50 transition-all font-medium hover:scale-105"
             >
               Connect
             </a>
@@ -41,20 +62,20 @@ export default function Navigation() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg glass-hover transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {isOpen && (
-          <div className="md:hidden py-4 space-y-3 border-t border-gray-200">
+          <div className="md:hidden py-4 space-y-3 border-t border-white/10">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors font-medium rounded-lg"
+                className="block px-4 py-2 text-gray-300 hover:text-white glass-hover transition-all font-medium rounded-lg"
               >
                 {link.label}
               </a>
@@ -63,7 +84,7 @@ export default function Navigation() {
               href="https://www.linkedin.com/in/sheksharma"
               target="_blank"
               rel="noopener noreferrer"
-              className="block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors font-medium text-center"
+              className="block px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:shadow-lg transition-all font-medium text-center"
             >
               Connect on LinkedIn
             </a>

@@ -4,39 +4,39 @@ export default function Impact() {
   const metrics = [
     {
       icon: TrendingUp,
-      value: '50%',
-      label: 'Faster Planning',
-      description: 'Reduced quarterly release planning time from days to hours',
+      value: '12h → 6h',
+      label: 'Research Time',
+      description: 'GenAI query-to-insight',
     },
     {
       icon: Clock,
-      value: '90%',
-      label: 'Time Saved',
-      description: 'Eliminated manual Excel reconciliation and capacity calculations',
+      value: '8 weeks',
+      label: 'vs 24-week target',
+      description: '3,000 users onboarded',
     },
     {
       icon: Users,
-      value: '5+',
-      label: 'Teams Supported',
-      description: 'Can manage multiple squads with different velocities simultaneously',
+      value: '500+',
+      label: 'Researchers',
+      description: '40% daily active growth',
     },
     {
       icon: Target,
-      value: '100%',
-      label: 'Conflict Detection',
-      description: 'Identifies all over-allocation scenarios before sprint kickoff',
+      value: '$200K',
+      label: 'Funding Secured',
+      description: 'Rapid MVP prototyping',
     },
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-purple-50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            Built for <span className="text-primary">Real Impact</span>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+            Measurable <span className="text-transparent bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text">Impact</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Not just a portfolio piece — a production-ready tool solving real capacity planning problems.
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            Recent deliverables for Fortune 500 clients at Deloitte
           </p>
         </div>
 
@@ -44,14 +44,15 @@ export default function Impact() {
           {metrics.map((metric, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all text-center border-2 border-transparent hover:border-primary"
+              className="group glass glass-hover rounded-2xl p-6 text-center hover:scale-105 transition-all"
+              style={{ animationDelay: `${idx * 0.1}s` }}
             >
-              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <metric.icon className="text-primary" size={28} />
+              <div className="w-14 h-14 bg-gradient-to-br from-green-600 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <metric.icon className="text-white" size={28} />
               </div>
-              <p className="text-4xl font-bold text-primary mb-2">{metric.value}</p>
-              <p className="font-semibold text-gray-900 mb-2">{metric.label}</p>
-              <p className="text-sm text-gray-600">{metric.description}</p>
+              <p className="text-4xl font-bold text-transparent bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text mb-2">{metric.value}</p>
+              <p className="font-semibold mb-2">{metric.label}</p>
+              <p className="text-sm text-gray-400">{metric.description}</p>
             </div>
           ))}
         </div>
