@@ -64,7 +64,8 @@ CURRENT ROLE - Senior Product Manager at Deloitte (Pharmaceutical GenAI Platform
 
 PREVIOUS ROLES:
 1. Platform Product Manager - Retail Mobile Platform (2022-2023):
-   - Accelerated feature rollout by 30% through modular API architecture
+   - Managed requirements from app teams and prioritized based on business needs
+   - Accelerated feature rollout by 30% through strategic prioritization
    - Reduced mobile crash rate from 4.2% to 1.1% (preventing $500K lost productivity)
    - Improved frontline efficiency by 20% across 15,000 devices
    - Doubled deployment velocity (monthly to bi-weekly sprints)

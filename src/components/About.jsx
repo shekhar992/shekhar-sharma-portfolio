@@ -20,9 +20,9 @@ export default function About() {
       role: 'Platform Product Manager',
       period: '2022 - 2023',
       problem: 'Duplicate backend work across 2 frontline apps slowing feature delivery—15,000 devices affected',
-      solution: 'Built modular API architecture and reusable platform components enabling 12 new capabilities in 8 months',
+      solution: 'Managed platform requirements from app teams, prioritized based on business needs, and orchestrated delivery of 12 new capabilities in 8 months',
       delivery: [
-        '🔍 Discovery: Accelerated feature rollout by 30% through shared platform components',
+        '🔍 Discovery: Accelerated feature rollout by 30% through requirements prioritization and shared platform approach',
         '🎯 Stability: Reduced mobile crash rate from 4.2% to 1.1%—preventing ~$500K lost productivity',
         '🚀 Velocity: Transformed release cadence from monthly to bi-weekly while maintaining 98% uptime',
       ],
