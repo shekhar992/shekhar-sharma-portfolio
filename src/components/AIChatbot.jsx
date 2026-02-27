@@ -1,4 +1,4 @@
-import { MessageCircle, X, Send, Sparkles, Loader2, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
+import { MessageCircle, X, Send, Loader2, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 
 export default function AIChatbot() {
@@ -281,79 +281,59 @@ Location: Mumbai, India
           className="fixed bottom-8 left-8 z-50 group"
           aria-label="Open AI Chat"
         >
-          {/* Pulsing rings */}
-          <div className="absolute inset-0 animate-ping">
-            <div className="w-full h-full rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-30"></div>
-          </div>
-          <div className="absolute inset-0 animate-pulse">
-            <div className="w-full h-full rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-20"></div>
-          </div>
-
-          {/* Main button */}
-          <div className="relative flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 bg-[length:200%_100%] rounded-full shadow-2xl shadow-purple-500/50 hover:shadow-pink-500/70 transition-all hover:scale-110 animate-shimmer">
-            <div className="relative">
-              <MessageCircle className="text-white" size={24} />
-              <Sparkles 
-                className="absolute -top-1 -right-1 text-yellow-300 animate-pulse" 
-                size={14} 
-              />
-            </div>
-            <span className="hidden sm:block text-white font-bold whitespace-nowrap">
-              Ask AI About Me 🤖
+          {/* Main button - Apple style */}
+          <div className="flex items-center gap-3 px-6 py-4 bg-white text-black rounded-full shadow-2xl hover:scale-105 transition-smooth">
+            <MessageCircle size={22} />
+            <span className="hidden sm:block font-semibold whitespace-nowrap">
+              Ask AI about me
             </span>
           </div>
-
-          {/* Glow effect */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-30 blur-xl transition-opacity"></div>
         </button>
       )}
 
       {/* Chat Window */}
       {isOpen && (
         <div className="fixed bottom-8 left-8 z-50 w-[400px] max-w-[calc(100vw-4rem)] animate-fadeInUp">
-          <div className="glass rounded-2xl shadow-2xl overflow-hidden border border-white/20">
+          <div className="bg-zinc-900 rounded-3xl shadow-2xl overflow-hidden border border-zinc-800">
             {/* Header */}
-            <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-4 flex items-center justify-between">
+            <div className="bg-zinc-950 p-4 flex items-center justify-between border-b border-zinc-800">
               <div className="flex items-center gap-3">
-                <div className="relative">
-                  <MessageCircle className="text-white" size={24} />
-                  <span className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-purple-600"></span>
-                </div>
+                <MessageCircle className="text-white" size={22} />
                 <div>
-                  <h3 className="font-bold text-white">AI Assistant</h3>
-                  <p className="text-xs text-purple-100">Ask me anything!</p>
+                  <h3 className="font-semibold text-white">AI Assistant</h3>
+                  <p className="text-xs text-zinc-400">Ask me anything</p>
                 </div>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-2 hover:bg-white/20 rounded-lg transition-colors"
+                className="p-2 hover:bg-zinc-800 rounded-lg transition-colors"
               >
-                <X className="text-white" size={20} />
+                <X className="text-zinc-400 hover:text-white" size={20} />
               </button>
             </div>
 
             {/* Messages */}
-            <div className="h-[400px] overflow-y-auto p-4 space-y-4 bg-slate-900/50">
+            <div className="h-[400px] overflow-y-auto p-4 space-y-4 bg-black">
               {messages.map((message, idx) => (
                 <div
                   key={idx}
                   className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
                 >
                   <div
-                    className={`max-w-[80%] rounded-2xl px-4 py-2 ${
+                    className={`max-w-[80%] rounded-2xl px-4 py-2.5 ${
                       message.role === 'user'
-                        ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white'
-                        : 'glass text-gray-200'
+                        ? 'bg-white text-black'
+                        : 'bg-zinc-800 text-zinc-100'
                     }`}
                   >
-                    <p className="text-sm">{message.content}</p>
+                    <p className="text-sm leading-relaxed">{message.content}</p>
                   </div>
                 </div>
               ))}
               {isLoading && (
                 <div className="flex justify-start">
-                  <div className="glass rounded-2xl px-4 py-2">
-                    <Loader2 className="animate-spin text-purple-400" size={20} />
+                  <div className="bg-zinc-800 rounded-2xl px-4 py-2.5">
+                    <Loader2 className="animate-spin text-zinc-400" size={20} />
                   </div>
                 </div>
               )}
@@ -361,15 +341,15 @@ Location: Mumbai, India
             </div>
 
             {/* Quick Questions */}
-            <div className="p-3 bg-slate-900/30 border-t border-white/10">
+            <div className="p-3 bg-zinc-950 border-t border-zinc-800">
               <div className="flex items-center justify-between mb-2">
-                <p className="text-xs text-gray-400">
+                <p className="text-xs text-zinc-500">
                   {messages.length <= 1 ? 'Quick questions:' : 'Follow-up questions:'}
                 </p>
                 {messages.length > 1 && (
                   <button
                     onClick={handleClearChat}
-                    className="flex items-center gap-1 text-xs px-2 py-1 glass glass-hover rounded-lg text-gray-400 hover:text-white transition-all"
+                    className="flex items-center gap-1 text-xs px-2 py-1 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-zinc-400 hover:text-white transition-all"
                     title="Clear chat"
                   >
                     <RotateCcw size={12} />
@@ -382,7 +362,7 @@ Location: Mumbai, India
                   <button
                     key={idx}
                     onClick={() => handleQuickQuestion(q)}
-                    className="text-xs px-3 py-1 glass glass-hover rounded-full text-gray-300 hover:text-white transition-all"
+                    className="text-xs px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 rounded-full text-zinc-300 hover:text-white transition-all"
                   >
                     {q}
                   </button>
@@ -391,7 +371,7 @@ Location: Mumbai, India
                   <button
                     key={`more-${idx}`}
                     onClick={() => handleQuickQuestion(q)}
-                    className="text-xs px-3 py-1 glass glass-hover rounded-full text-gray-300 hover:text-white transition-all"
+                    className="text-xs px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 rounded-full text-zinc-300 hover:text-white transition-all"
                   >
                     {q}
                   </button>
@@ -399,7 +379,7 @@ Location: Mumbai, India
               </div>
               <button
                 onClick={() => setShowMoreQuestions(!showMoreQuestions)}
-                className="flex items-center gap-1 text-xs mt-2 px-3 py-1.5 glass glass-hover rounded-lg text-purple-400 hover:text-purple-300 transition-all mx-auto"
+                className="flex items-center gap-1 text-xs mt-2 px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-zinc-400 hover:text-white transition-all mx-auto"
               >
                 {showMoreQuestions ? (
                   <>
@@ -416,7 +396,7 @@ Location: Mumbai, India
             </div>
 
             {/* Input */}
-            <div className="p-4 bg-slate-900/50 border-t border-white/10">
+            <div className="p-4 bg-zinc-950 border-t border-zinc-800">
               <div className="flex gap-2">
                 <input
                   ref={inputRef}
@@ -425,15 +405,15 @@ Location: Mumbai, India
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSend()}
                   placeholder="Ask about my experience..."
-                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                  className="flex-1 bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-2 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-zinc-600 transition-colors"
                   disabled={isLoading}
                 />
                 <button
                   onClick={handleSend}
                   disabled={!input.trim() || isLoading}
-                  className="px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-4 py-2 bg-white text-black rounded-xl hover:bg-zinc-100 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <Send size={18} className="text-white" />
+                  <Send size={18} />
                 </button>
               </div>
             </div>

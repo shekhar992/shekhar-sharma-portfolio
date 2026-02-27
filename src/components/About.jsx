@@ -112,8 +112,19 @@ export default function About() {
                 <p className="text-zinc-300 text-lg leading-relaxed">{exp.solution}</p>
               </div>
 
+              {/* Delivery */}
+              <div className="mb-6">
+                <p className="text-sm font-medium text-blue-400 mb-2">Delivery</p>
+                <ul className="space-y-2">
+                  {exp.delivery.map((item, i) => (
+                    <li key={i} className="text-zinc-300 text-base leading-relaxed">{item}</li>
+                  ))}
+                </ul>
+              </div>
+
               {/* Impact */}
               <div className="pt-6 border-t border-zinc-800">
+                <p className="text-sm font-medium text-zinc-400 mb-2">Impact</p>
                 <p className="text-white font-medium text-lg leading-relaxed">{exp.impact}</p>
               </div>
             </div>
