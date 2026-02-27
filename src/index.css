@@ -12,6 +12,12 @@
   
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Account for fixed nav height */
+  }
+  
+  /* Scroll offset for sections with fixed nav */
+  section[id] {
+    scroll-margin-top: 5rem;
   }
   
   /* Apple-style text rendering */
