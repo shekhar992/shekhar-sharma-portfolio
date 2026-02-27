@@ -70,116 +70,76 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            End-to-End Product Delivery
-            <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text"> at Scale</span>
+    <section id="about" className="py-32 px-6 lg:px-12 bg-zinc-950">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-24">
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-semibold mb-8 tracking-tight">
+            Experience
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Discovery → Requirements → Agile Execution → Aligning Engineering + Design → Go Live
-            <br />
-            <span className="text-gray-400 text-base">10 years product experience • 7 years at Deloitte (Pfizer, Kroger, Eli Lilly) • Enterprise SaaS, GenAI, Mobile</span>
+          <p className="text-xl sm:text-2xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
+            10 years building products for Fortune 500<br className="hidden sm:block" />
+            <span className="text-white">Deloitte • Pfizer • Kroger • Eli Lilly</span>
           </p>
         </div>
 
-        {/* Experience Timeline */}
-        <div className="space-y-6 mb-16">
+        {/* Experience Timeline - Apple Card Style */}
+        <div className="space-y-8 mb-24">
           {experience.map((exp, idx) => (
             <div 
               key={idx} 
-              className="group glass glass-hover rounded-2xl p-6 sm:p-8 hover:scale-[1.02] transition-all"
+              className="apple-card"
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
               {/* Header */}
-              <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                  <Briefcase className="text-white" size={24} />
+              <div className="mb-8">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <h3 className="text-2xl font-semibold">{exp.role}</h3>
+                  <span className="text-sm text-zinc-500 whitespace-nowrap">{exp.period}</span>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold">{exp.role}</h3>
-                  <p className="text-purple-400 font-semibold">{exp.company}</p>
-                  <p className="text-gray-500 text-sm">{exp.period}</p>
-                </div>
+                <p className="text-zinc-400 font-medium">{exp.company}</p>
               </div>
 
               {/* Problem */}
-              <div className="mb-4 pl-16">
-                <p className="text-orange-400 font-semibold text-sm mb-1">🔴 Problem</p>
-                <p className="text-gray-300">{exp.problem}</p>
+              <div className="mb-6">
+                <p className="text-sm font-medium text-red-400 mb-2">Challenge</p>
+                <p className="text-zinc-300 text-lg leading-relaxed">{exp.problem}</p>
               </div>
 
               {/* Solution */}
-              <div className="mb-4 pl-16">
-                <p className="text-green-400 font-semibold text-sm mb-1">✅ Solution</p>
-                <p className="text-gray-300">{exp.solution}</p>
-              </div>
-
-              {/* Delivery Process */}
-              <div className="mb-4 pl-16">
-                <p className="text-cyan-400 font-semibold text-sm mb-2">⚙️ End-to-End Delivery</p>
-                <ul className="space-y-1">
-                  {exp.delivery.map((item, dIdx) => (
-                    <li key={dIdx} className="text-gray-400 text-sm">{item}</li>
-                  ))}
-                </ul>
+              <div className="mb-6">
+                <p className="text-sm font-medium text-green-400 mb-2">Solution</p>
+                <p className="text-zinc-300 text-lg leading-relaxed">{exp.solution}</p>
               </div>
 
               {/* Impact */}
-              <div className="pl-16 pt-3 border-t border-white/10">
-                <p className="text-purple-400 font-semibold text-sm mb-1">📊 Impact</p>
-                <p className="text-white font-medium">{exp.impact}</p>
+              <div className="pt-6 border-t border-zinc-800">
+                <p className="text-white font-medium text-lg leading-relaxed">{exp.impact}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Skills & Certifications */}
+        {/* Skills Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="glass rounded-2xl p-6">
-            <div className="flex items-center gap-3 mb-4">
-              <Award className="text-purple-400" size={24} />
-              <h3 className="text-xl font-bold">Core Expertise</h3>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {['Product Strategy', 'PI Planning', 'GenAI/LLMs', 'Enterprise SaaS', 'Mobile (iOS/Android)', 'SAMD', 'SAFe Agile', 'Design Thinking', 'OKRs', 'API Design'].map((skill) => (
-                <span key={skill} className="px-3 py-1 bg-purple-500/20 rounded-full text-sm font-medium text-purple-300">
+          <div className="apple-card">
+            <h3 className="text-2xl font-semibold mb-6">Expertise</h3>
+            <div className="flex flex-wrap gap-3">
+              {['Product Strategy', 'PI Planning', 'GenAI/LLMs', 'Enterprise SaaS', 'Mobile', 'SAMD', 'SAFe Agile', 'Design Thinking', 'OKRs', 'API Design'].map((skill) => (
+                <span key={skill} className="px-4 py-2 bg-zinc-800 rounded-full text-sm font-medium text-zinc-300">
                   {skill}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className="glass rounded-2xl p-6">
-            <div className="flex items-center gap-3 mb-4">
-              <GraduationCap className="text-cyan-400" size={24} />
-              <h3 className="text-xl font-bold">Certifications</h3>
-            </div>
-            <ul className="space-y-2">
-              <li className="flex items-center gap-2 text-gray-400">
-                <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                Certified SAFe® 6 Agilist (2025)
-              </li>
-              <li className="flex items-center gap-2 text-gray-400">
-                <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                Certified Scrum Product Owner (2025)
-              </li>
+          <div className="apple-card">
+            <h3 className="text-2xl font-semibold mb-6">Certifications</h3>
+            <ul className="space-y-4">
+              <li className="text-zinc-300 text-lg">Certified SAFe® 6 Agilist</li>
+              <li className="text-zinc-300 text-lg">Certified Scrum Product Owner (CSPO)</li>
             </ul>
           </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-12 text-center">
-          <a
-            href="https://www.linkedin.com/in/sheksharma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl hover:shadow-2xl hover:shadow-purple-500/50 transition-all font-semibold hover:scale-105"
-          >
-            Full Resume on LinkedIn
-            <ExternalLink size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-          </a>
         </div>
       </div>
     </section>

@@ -1,78 +1,49 @@
-import { ArrowRight, Linkedin, Github, FileText, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="hero" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Animated background orbs */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-12 relative">
+      {/* Subtle gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-zinc-950 via-black to-black opacity-60"></div>
       
-      <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 glass glass-hover rounded-full font-medium text-sm animate-fadeInUp">
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center space-y-12">
+          {/* Status Badge - Apple style */}
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800/50 rounded-full text-sm font-medium animate-fadeIn">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-            <Sparkles size={16} className="text-purple-400" />
-            Open to Product Leadership
+            <Sparkles size={15} className="text-zinc-400" />
+            <span className="text-zinc-300">Available for Product Leadership</span>
           </div>
 
-          {/* Main Headline */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-            Deep Problem Solver.
+          {/* Massive Headline - Apple style */}
+          <h1 className="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-semibold leading-[0.95] tracking-tight animate-fadeInUp text-white" style={{ animationDelay: '0.1s' }}>
+            Product Manager.
             <br />
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">Fast Builder. Proven Shipper.</span>
+            Builder.
+            <br />
+            <span className="text-zinc-500">Problem Solver.</span>
           </h1>
 
-          {/* Subheadline */}
-          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-            I solve problems by getting uncomfortably deep into the details—then building the solution when it doesn't exist.
-            <br />
-            <span className="text-white font-semibold mt-2 block">7 years at Deloitte building products for Fortune 500 clients:</span> Led GenAI platform serving 500+ researchers • Secured $200K funding • Scaled patient app to 3,000 users in 8 weeks (3x faster than target)
+          {/* Clean Subheadline */}
+          <p className="text-xl sm:text-2xl lg:text-3xl text-zinc-400 max-w-4xl mx-auto font-normal leading-relaxed animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+            10 years of shipping products for Fortune 500 clients.<br className="hidden sm:block" />
+            <span className="text-white">Built and scaled at Deloitte, Kroger, Pfizer, Eli Lilly.</span>
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 pt-4 animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
+          {/* Clean CTAs - Apple style */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8 animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
             <a
-              href="#product"
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl hover:shadow-2xl hover:shadow-purple-500/50 transition-all font-semibold hover:scale-105"
+              href="#about"
+              className="group inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-black rounded-full text-lg font-semibold hover:bg-zinc-100 transition-smooth hover:scale-[1.02]"
             >
-              See What I Built
+              View my work
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#about"
-              className="inline-flex items-center gap-2 px-8 py-4 glass glass-hover rounded-xl font-semibold hover:scale-105"
-            >
-              My Story
-            </a>
-          </div>
-
-          {/* Quick Links */}
-          <div className="flex flex-wrap justify-center gap-6 pt-8 text-gray-400 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-            <a
-              href="https://www.linkedin.com/in/sheksharma"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 hover:text-purple-400 transition-all hover:scale-110"
-            >
-              <Linkedin size={20} />
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/shekhar992"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 hover:text-purple-400 transition-all hover:scale-110"
-            >
-              <Github size={20} />
-              GitHub
-            </a>
-            <a
               href="#contact"
-              className="inline-flex items-center gap-2 hover:text-purple-400 transition-all hover:scale-110"
+              className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-transparent border-2 border-zinc-700 text-white rounded-full text-lg font-semibold hover:border-zinc-500 hover:bg-zinc-900/50 transition-smooth hover:scale-[1.02]"
             >
-              <FileText size={20} />
-              Resume
+              Get in touch
             </a>
           </div>
         </div>
