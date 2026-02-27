@@ -39,6 +39,12 @@ export default function AIChatbot() {
   const resumeContext = `
 SHEKHAR SHARMA - Senior Product Manager
 
+CONTACT:
+Email: sharmashekhar992@gmail.com
+LinkedIn: linkedin.com/in/sheksharma
+Website: https://shekhar-sharma-portfolio.vercel.app/
+Location: Mumbai, India
+
 PROFESSIONAL SUMMARY:
 10 years of product management experience with 7 years at Deloitte building products for Fortune 500 clients including Pfizer, Kroger, and Eli Lilly. Expert in GenAI/LLMs, Enterprise SaaS, Mobile Applications, and Regulated Healthcare (SAMD).
 
@@ -92,11 +98,6 @@ CERTIFICATIONS:
 
 EDUCATION:
 Bachelor of Engineering - Information Technology, Mumbai
-
-CONTACT:
-Email: sharmashekhar992@gmail.com
-LinkedIn: linkedin.com/in/sheksharma
-Location: Mumbai, India
 `;
 
   const quickQuestions = [
