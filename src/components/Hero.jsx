@@ -27,7 +27,7 @@ export default function Hero() {
           {/* Clean Subheadline */}
           <p className="text-xl sm:text-2xl lg:text-3xl text-zinc-400 max-w-4xl mx-auto font-normal leading-relaxed animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
             10 years of shipping products for Fortune 500 clients.<br className="hidden sm:block" />
-            <span className="text-white">Built and scaled at Deloitte, Kroger, Pfizer, Eli Lilly.</span>
+            <span className="text-white">Built and scaled at Deloitte across healthcare, retail, and pharmaceutical sectors.</span>
           </p>
 
           {/* Clean CTAs - Apple style */}

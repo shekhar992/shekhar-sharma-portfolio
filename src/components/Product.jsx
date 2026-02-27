@@ -256,7 +256,7 @@ export default function Product() {
             <div className="apple-card p-10 max-w-3xl mx-auto">
               <h3 className="text-3xl font-semibold mb-6 text-white">The problem</h3>
               <div className="space-y-4 text-lg text-zinc-300">
-                <p>Leading PI Planning for Pfizer & Kroger clients = Excel hell.</p>
+                <p>Leading PI Planning for Fortune 500 clients = Excel hell.</p>
                 <p>📊 12 spreadsheets • 5 squads • 200+ tickets • Zero visibility</p>
                 <p>Managers constantly asking: <span className="italic text-zinc-400">"Can you share the latest version?"</span></p>
                 <p className="text-white font-semibold">One broken macro = hours of debugging.</p>

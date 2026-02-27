@@ -3,7 +3,7 @@ import { Briefcase, Award, GraduationCap, ExternalLink } from 'lucide-react';
 export default function About() {
   const experience = [
     {
-      company: 'Deloitte (Pfizer GenAI)',
+      company: 'Deloitte (Pharmaceutical)',
       role: 'Senior Product Manager',
       period: '2023 - Present',
       problem: 'Medical researchers spent 12+ hours per query manually searching clinical protocols—slowing drug development',
@@ -16,7 +16,7 @@ export default function About() {
       impact: 'Query-to-insight time: 12h → 6h • 40% increase in daily active users (500+ researchers) • Platform retention: 60% → 85% • Enabled $1.2M contract expansion',
     },
     {
-      company: 'Deloitte (Kroger)',
+      company: 'Deloitte (Retail)',
       role: 'Platform Product Manager',
       period: '2022 - 2023',
       problem: 'Duplicate backend work across 2 frontline apps slowing feature delivery—15,000 devices affected',
@@ -29,7 +29,7 @@ export default function About() {
       impact: 'Frontline efficiency +20% (45 min saved per worker/week) • 12 capabilities across 15K devices • Deployment velocity doubled',
     },
     {
-      company: 'Deloitte (Eli Lilly)',
+      company: 'Deloitte (Healthcare)',
       role: 'Product Owner - SAMD',
       period: '2019 - 2022',
       problem: 'Complex FDA-compliant onboarding (24 steps) causing patient drop-offs—risking $2M delay penalty if targets missed',
@@ -79,7 +79,7 @@ export default function About() {
           </h2>
           <p className="text-xl sm:text-2xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
             10 years building products for Fortune 500<br className="hidden sm:block" />
-            <span className="text-white">Deloitte • Pfizer • Kroger • Eli Lilly</span>
+            <span className="text-white">Healthcare • Retail • Pharmaceutical • Financial Services</span>
           </p>
         </div>
 

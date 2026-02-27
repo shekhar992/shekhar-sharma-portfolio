@@ -46,7 +46,7 @@ Website: https://shekhar-sharma-portfolio.vercel.app/
 Location: Mumbai, India
 
 PROFESSIONAL SUMMARY:
-10 years of product management experience with 7 years at Deloitte building products for Fortune 500 clients including Pfizer, Kroger, and Eli Lilly. Expert in GenAI/LLMs, Enterprise SaaS, Mobile Applications, and Regulated Healthcare (SAMD).
+10 years of product management experience with 7 years at Deloitte building products for Fortune 500 clients across pharmaceutical, retail, and healthcare sectors. Expert in GenAI/LLMs, Enterprise SaaS, Mobile Applications, and Regulated Healthcare (SAMD).
 
 KEY ACHIEVEMENTS:
 - Led GenAI platform serving 500+ medical researchers, reducing insight time from 12 hours to 6 hours
@@ -54,7 +54,7 @@ KEY ACHIEVEMENTS:
 - Scaled SAMD patient app to 3,000 users in 8 weeks (3x faster than 24-week target)
 - Built and shipped PI Planner SaaS tool in 3 weeks using AI-powered vibecoding
 
-CURRENT ROLE - Senior Product Manager at Deloitte (Pfizer GenAI Platform) - 2023-Present:
+CURRENT ROLE - Senior Product Manager at Deloitte (Pharmaceutical GenAI Platform) - 2023-Present:
 - Delivered 10+ major features across 4 quarterly releases
 - Reduced researcher query-to-insight time from 12 hours to 6 hours
 - Drove 40% increase in daily active users (500+ researchers)
@@ -63,13 +63,13 @@ CURRENT ROLE - Senior Product Manager at Deloitte (Pfizer GenAI Platform) - 2023
 - Enabled $1.2M contract expansion
 
 PREVIOUS ROLES:
-1. Platform Product Manager - Kroger Mobile Platform (2022-2023):
+1. Platform Product Manager - Retail Mobile Platform (2022-2023):
    - Accelerated feature rollout by 30% through modular API architecture
    - Reduced mobile crash rate from 4.2% to 1.1% (preventing $500K lost productivity)
    - Improved frontline efficiency by 20% across 15,000 devices
    - Doubled deployment velocity (monthly to bi-weekly sprints)
 
-2. Product Owner - Eli Lilly SAMD Applications (2019-2022):
+2. Product Owner - Healthcare SAMD Applications (2019-2022):
    - Delivered 3 regulated patient-facing mobile apps with zero FDA violations
    - Redesigned onboarding from 24 steps to 12 steps (completion rate 72% → 94%)
    - Prevented $2M delay penalty through accelerated user onboarding
@@ -101,6 +101,7 @@ Bachelor of Engineering - Information Technology, Mumbai
 `;
 
   const quickQuestions = [
+    "Download resume",
     "What's your GenAI experience?",
     "Tell me about your biggest impact",
     "What tools and tech do you use?",
@@ -204,6 +205,21 @@ Bachelor of Engineering - Information Technology, Mumbai
 
   const handleQuickQuestion = async (question) => {
     setInput('');
+    
+    // Handle download resume action
+    if (question === "Download resume") {
+      const link = document.createElement('a');
+      link.href = '/resume.pdf';
+      link.download = 'Shekhar_Sharma_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      const userMessage = { role: 'user', content: question };
+      const assistantMessage = { role: 'assistant', content: '✅ Resume download started! Check your downloads folder.' };
+      setMessages((prev) => [...prev, userMessage, assistantMessage]);
+      return;
+    }
     
     const userMessage = { role: 'user', content: question };
     setMessages((prev) => [...prev, userMessage]);
