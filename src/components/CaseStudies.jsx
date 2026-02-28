@@ -6,7 +6,7 @@ const CaseStudies = () => {
     {
       id: 'genai-platform',
       title: 'Transforming Pharmaceutical Research with GenAI',
-      company: 'Deloitte',
+      company: 'Deloitte (Life Sciences)',
       hook: 'How I scaled a broken AI platform from 5 to 200 users, secured $200K funding through rapid prototyping, and learned vital lessons when the project shut down.',
       metrics: [
         { value: '12h → 6h', label: 'Research time' },

@@ -12,6 +12,18 @@ export default function KrogerCaseStudy() {
     document.documentElement.scrollTop = 0
     document.body.scrollTop = 0
     
+    // Throttle function to limit scroll handler calls
+    let throttleTimer;
+    const throttle = (callback, delay = 100) => {
+      return (...args) => {
+        if (throttleTimer) return;
+        throttleTimer = setTimeout(() => {
+          callback(...args);
+          throttleTimer = null;
+        }, delay);
+      };
+    };
+
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight - windowHeight;
@@ -34,8 +46,10 @@ export default function KrogerCaseStudy() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const throttledScroll = throttle(handleScroll, 100);
+    window.addEventListener('scroll', throttledScroll, { passive: true });
+    handleScroll(); // Initial call
+    return () => window.removeEventListener('scroll', throttledScroll);
   }, []);
 
   const scrollToSection = (sectionId) => {

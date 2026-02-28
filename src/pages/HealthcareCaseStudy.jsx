@@ -15,6 +15,18 @@ export default function HealthcareCaseStudy() {
   }, []);
 
   useEffect(() => {
+    // Throttle function to limit scroll handler calls
+    let throttleTimer;
+    const throttle = (callback, delay = 100) => {
+      return (...args) => {
+        if (throttleTimer) return;
+        throttleTimer = setTimeout(() => {
+          callback(...args);
+          throttleTimer = null;
+        }, delay);
+      };
+    };
+
     const handleScroll = () => {
       // Calculate reading progress
       const windowHeight = window.innerHeight;
@@ -38,10 +50,11 @@ export default function HealthcareCaseStudy() {
       setActiveSection(currentSection);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    const throttledScroll = throttle(handleScroll, 100);
+    window.addEventListener('scroll', throttledScroll, { passive: true });
     handleScroll(); // Initial call
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', throttledScroll);
   }, []);
 
   const scrollToSection = (sectionId) => {
@@ -170,7 +183,7 @@ export default function HealthcareCaseStudy() {
         </Link>
 
         {/* Hero Section */}
-        <div className="mb-16 animate-fadeIn">
+        <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">
             <div className="p-2 bg-emerald-600/20 rounded-lg">
               <Activity className="w-6 h-6 text-emerald-400" />
