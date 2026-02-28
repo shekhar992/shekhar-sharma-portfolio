@@ -12,7 +12,7 @@ export default function Journey() {
       icon: Code2,
       title: 'Build',
       description: 'React + Vite with Claude/Copilot as dev partners',
-      tool: 'Vibecoding',
+      tool: 'AI-Assisted',
     },
     {
       icon: Sparkles,
@@ -37,7 +37,7 @@ export default function Journey() {
             <span className="text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text"> Not 6 Months.</span>
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            No dev team. No sprint planning. Just vibecoding with AI.
+            Built independently, leveraging AI to accelerate development.
           </p>
         </div>
 

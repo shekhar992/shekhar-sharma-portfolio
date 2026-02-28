@@ -33,7 +33,7 @@ export default function Product() {
       icon: Code2,
       title: 'Build',
       description: 'React + TypeScript with Claude/Copilot as dev partners',
-      tool: 'Vibecoding',
+      tool: 'AI-Assisted',
     },
     {
       icon: Sparkles,
@@ -114,7 +114,7 @@ export default function Product() {
         {/* App Screenshots Marquee */}
         <div className="mb-20 relative overflow-hidden">
           <div className="text-center mb-8">
-            <p className="text-zinc-500 text-sm">Hover to pause</p>
+            <p className="text-zinc-400 text-sm font-medium">Hover to pause</p>
           </div>
           
           {/* Marquee Container */}
@@ -209,7 +209,7 @@ export default function Product() {
                 Shipped in 3 weeks
               </h3>
               <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-                No dev team. No sprint planning. Just vibecoding with AI.
+                Built independently with AI as my development partner.
               </p>
             </div>
 
@@ -309,7 +309,7 @@ export default function Product() {
                 {/* My Approach */}
                 <div className="flex items-center justify-center gap-3 text-white flex-wrap">
                   <span className="font-semibold">Me</span>
-                  <span>Vibecode MVP in 3 weeks</span>
+                  <span>Build independently in 3 weeks</span>
                   <span>→</span>
                   <span>Get feedback</span>
                   <span>→</span>

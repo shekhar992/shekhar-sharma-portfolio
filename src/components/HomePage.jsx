@@ -1,0 +1,27 @@
+import Hero from './Hero'
+import About from './About'
+import CaseStudies from './CaseStudies'
+import Product from './Product'
+import Impact from './Impact'
+import Contact from './Contact'
+import Footer from './Footer'
+import AppFloater from './AppFloater'
+import AIChatbot from './AIChatbot'
+
+const HomePage = () => {
+  return (
+    <>
+      <Hero />
+      <About />
+      <CaseStudies />
+      <Product />
+      <Impact />
+      <Contact />
+      <Footer />
+      <AppFloater />
+      <AIChatbot />
+    </>
+  )
+}
+
+export default HomePage

@@ -23,7 +23,7 @@ export default function Impact() {
             <div key={idx} className="text-center">
               <p className="text-5xl lg:text-6xl font-semibold text-white mb-3">{metric.value}</p>
               <p className="text-xl font-semibold text-zinc-300 mb-2">{metric.label}</p>
-              <p className="text-base text-zinc-500">{metric.sub}</p>
+              <p className="text-base text-zinc-400 font-medium">{metric.sub}</p>
             </div>
           ))}
         </div>

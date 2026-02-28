@@ -52,7 +52,7 @@ KEY ACHIEVEMENTS:
 - Led GenAI platform serving 500+ medical researchers, reducing insight time from 12 hours to 6 hours
 - Secured $200K incremental funding through rapid MVP prototyping
 - Scaled SAMD patient app to 3,000 users in 8 weeks (3x faster than 24-week target)
-- Built and shipped PI Planner SaaS tool in 3 weeks using AI-powered vibecoding
+- Built and shipped PI Planner SaaS tool independently in 3 weeks, leveraging AI as development partner
 
 CURRENT ROLE - Senior Product Manager at Deloitte (Pharmaceutical GenAI Platform) - 2023-Present:
 - Delivered 10+ major features across 4 quarterly releases
@@ -93,7 +93,7 @@ SKILLS & EXPERTISE:
 - Product Management: Product Strategy, Roadmap Planning, Stakeholder Management, OKRs & KPIs, PI Planning, Product-Market Fit, User Research, A/B Testing, Go-to-Market, Cross-Functional Leadership
 - Technical & Platforms: GenAI/LLMs, Enterprise SaaS, Mobile Apps (iOS/Android), API Design, Cloud Platforms, SAMD Compliance, FDA 21 CFR Part 11, Data Analytics
 - Methodologies & Frameworks: SAFe Agile, Scrum, Lean Product Development, Design Thinking, Jobs-to-be-Done, Continuous Discovery
-- Tools & Prototyping: Figma, JIRA, Confluence, SQL, Miro, Amplitude, AI-Powered Prototyping, Vibecoding
+- Tools & Prototyping: Figma, JIRA, Confluence, SQL, Miro, Amplitude, AI-Powered Prototyping, Rapid Development
 
 DOMAIN EXPERIENCE:
 Healthcare, Pharmaceutical, Retail, Financial Services, Insurance, Media

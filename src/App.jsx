@@ -1,25 +1,18 @@
-import Hero from './components/Hero'
+import { Routes, Route } from 'react-router-dom'
 import Navigation from './components/Navigation'
-import Product from './components/Product'
-import Impact from './components/Impact'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import AppFloater from './components/AppFloater'
-import AIChatbot from './components/AIChatbot'
+import HomePage from './components/HomePage'
+import GenAICaseStudy from './pages/GenAICaseStudy'
+import KrogerCaseStudy from './pages/KrogerCaseStudy'
 
 function App() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
-      <About />
-      <Product />
-      <Impact />
-      <Contact />
-      <Footer />
-      <AppFloater />
-      <AIChatbot />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/case-study/genai-platform" element={<GenAICaseStudy />} />
+        <Route path="/case-study/kroger-platform" element={<KrogerCaseStudy />} />
+      </Routes>
     </div>
   )
 }

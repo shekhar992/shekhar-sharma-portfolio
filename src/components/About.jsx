@@ -1,4 +1,5 @@
-import { Briefcase, Award, GraduationCap, ExternalLink } from 'lucide-react';
+import { Briefcase, Award, GraduationCap, ExternalLink, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   const experience = [
@@ -14,6 +15,7 @@ export default function About() {
         '🚀 Prototyping: Secured $200K funding by building 3 rapid MVPs in 2 weeks using AI no-code tools',
       ],
       impact: 'Query-to-insight time: 12h → 6h • 40% increase in daily active users (500+ researchers) • Platform retention: 60% → 85% • Enabled $1.2M contract expansion',
+      caseStudyLink: '/case-study/genai-platform',
     },
     {
       company: 'Deloitte (Retail)',
@@ -27,6 +29,7 @@ export default function About() {
         '🚀 Velocity: Transformed release cadence from monthly to bi-weekly while maintaining 98% uptime',
       ],
       impact: 'Frontline efficiency +20% (45 min saved per worker/week) • 12 capabilities across 15K devices • Deployment velocity doubled',
+      caseStudyLink: '/case-study/kroger-platform',
     },
     {
       company: 'Deloitte (Healthcare)',
@@ -94,39 +97,53 @@ export default function About() {
               {/* Header */}
               <div className="mb-8">
                 <div className="flex items-start justify-between gap-4 mb-2">
-                  <h3 className="text-2xl font-semibold">{exp.role}</h3>
-                  <span className="text-sm text-zinc-500 whitespace-nowrap">{exp.period}</span>
+                  <h3 className="text-2xl font-semibold text-white">{exp.role}</h3>
+                  <span className="text-sm text-zinc-400 whitespace-nowrap font-medium">{exp.period}</span>
                 </div>
-                <p className="text-zinc-400 font-medium">{exp.company}</p>
+                <p className="text-zinc-300 font-medium text-lg">{exp.company}</p>
               </div>
 
               {/* Problem */}
               <div className="mb-6">
-                <p className="text-sm font-medium text-red-400 mb-2">Challenge</p>
-                <p className="text-zinc-300 text-lg leading-relaxed">{exp.problem}</p>
+                <p className="text-sm font-semibold text-red-400 uppercase tracking-wider mb-3">Challenge</p>
+                <p className="text-zinc-200 text-base leading-relaxed">{exp.problem}</p>
               </div>
 
               {/* Solution */}
               <div className="mb-6">
-                <p className="text-sm font-medium text-green-400 mb-2">Solution</p>
-                <p className="text-zinc-300 text-lg leading-relaxed">{exp.solution}</p>
+                <p className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">Solution</p>
+                <p className="text-zinc-200 text-base leading-relaxed">{exp.solution}</p>
               </div>
 
               {/* Delivery */}
               <div className="mb-6">
-                <p className="text-sm font-medium text-blue-400 mb-2">Delivery</p>
-                <ul className="space-y-2">
+                <p className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-3">Delivery</p>
+                <ul className="space-y-2.5">
                   {exp.delivery.map((item, i) => (
-                    <li key={i} className="text-zinc-300 text-base leading-relaxed">{item}</li>
+                    <li key={i} className="text-zinc-200 text-base leading-relaxed">{item}</li>
                   ))}
                 </ul>
               </div>
 
               {/* Impact */}
               <div className="pt-6 border-t border-zinc-800">
-                <p className="text-sm font-medium text-zinc-400 mb-2">Impact</p>
-                <p className="text-white font-medium text-lg leading-relaxed">{exp.impact}</p>
+                <p className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-3">Impact</p>
+                <p className="text-white font-semibold text-base leading-relaxed">{exp.impact}</p>
               </div>
+
+              {/* Case Study CTA */}
+              {exp.caseStudyLink && (
+                <div className="pt-6 border-t border-zinc-800 mt-6">
+                  <Link 
+                    to={exp.caseStudyLink}
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-zinc-100 transition-all duration-200 group"
+                  >
+                    Read Full Case Study
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  <p className="text-xs text-zinc-400 mt-3 font-medium">Deep dive into strategy, decisions, and lessons learned • 10 min read</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -134,14 +151,14 @@ export default function About() {
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           <div className="apple-card">
-            <h3 className="text-2xl font-semibold mb-8">Expertise</h3>
+            <h3 className="text-2xl font-semibold text-white mb-8">Expertise</h3>
             
             {/* Product Management */}
             <div className="mb-6">
-              <p className="text-sm font-semibold text-zinc-400 mb-3">Product Management</p>
+              <p className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-3">Product Management</p>
               <div className="flex flex-wrap gap-2">
                 {['Product Strategy', 'Roadmap Planning', 'Stakeholder Management', 'OKRs & KPIs', 'PI Planning', 'Product-Market Fit', 'User Research', 'A/B Testing', 'Go-to-Market'].map((skill) => (
-                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
                     {skill}
                   </span>
                 ))}
@@ -150,10 +167,10 @@ export default function About() {
 
             {/* Technical & Platforms */}
             <div className="mb-6">
-              <p className="text-sm font-semibold text-zinc-400 mb-3">Technical & Platforms</p>
+              <p className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-3">Technical & Platforms</p>
               <div className="flex flex-wrap gap-2">
                 {['GenAI/LLMs', 'Enterprise SaaS', 'Mobile Apps (iOS/Android)', 'API Design', 'Cloud Platforms', 'SAMD Compliance', 'FDA 21 CFR Part 11', 'Data Analytics'].map((skill) => (
-                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
                     {skill}
                   </span>
                 ))}
@@ -162,10 +179,10 @@ export default function About() {
 
             {/* Methodologies */}
             <div className="mb-6">
-              <p className="text-sm font-semibold text-zinc-400 mb-3">Methodologies & Frameworks</p>
+              <p className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-3">Methodologies & Frameworks</p>
               <div className="flex flex-wrap gap-2">
                 {['SAFe Agile', 'Scrum', 'Lean Product Development', 'Design Thinking', 'Jobs-to-be-Done', 'Continuous Discovery'].map((skill) => (
-                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
                     {skill}
                   </span>
                 ))}
@@ -174,10 +191,10 @@ export default function About() {
 
             {/* Tools & Prototyping */}
             <div>
-              <p className="text-sm font-semibold text-zinc-400 mb-3">Tools & Prototyping</p>
+              <p className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-3">Tools & Prototyping</p>
               <div className="flex flex-wrap gap-2">
-                {['Figma', 'JIRA', 'Confluence', 'SQL', 'Miro', 'Amplitude', 'AI-Powered Prototyping', 'Vibecoding'].map((skill) => (
-                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                {['Figma', 'JIRA', 'Confluence', 'SQL', 'Miro', 'Amplitude', 'AI-Powered Prototyping', 'Rapid Development'].map((skill) => (
+                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
                     {skill}
                   </span>
                 ))}
@@ -186,18 +203,18 @@ export default function About() {
           </div>
 
           <div className="apple-card">
-            <h3 className="text-2xl font-semibold mb-8">Certifications</h3>
+            <h3 className="text-2xl font-semibold text-white mb-8">Certifications</h3>
             <ul className="space-y-4">
-              <li className="text-zinc-300 text-lg">Certified SAFe® 6 Agilist</li>
-              <li className="text-zinc-300 text-lg">Certified Scrum Product Owner (CSPO)</li>
+              <li className="text-zinc-200 text-base font-medium">Certified SAFe® 6 Agilist</li>
+              <li className="text-zinc-200 text-base font-medium">Certified Scrum Product Owner (CSPO)</li>
             </ul>
 
             {/* Domain Experience */}
             <div className="mt-10">
-              <h3 className="text-2xl font-semibold mb-6">Domain Experience</h3>
+              <h3 className="text-xl font-semibold text-white mb-6">Domain Experience</h3>
               <div className="flex flex-wrap gap-2">
                 {['Healthcare', 'Pharmaceutical', 'Retail', 'Financial Services', 'Insurance', 'Media'].map((domain) => (
-                  <span key={domain} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-300">
+                  <span key={domain} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
                     {domain}
                   </span>
                 ))}
@@ -206,13 +223,13 @@ export default function About() {
 
             {/* Key Strengths */}
             <div className="mt-10">
-              <h3 className="text-2xl font-semibold mb-6">Key Strengths</h3>
+              <h3 className="text-xl font-semibold text-white mb-6">Key Strengths</h3>
               <ul className="space-y-3">
-                <li className="text-zinc-300">🚀 0→1 Product Launches</li>
-                <li className="text-zinc-300">⚡ Rapid Prototyping & MVPs</li>
-                <li className="text-zinc-300">📊 Data-Driven Decision Making</li>
-                <li className="text-zinc-300">🎯 Cross-Functional Leadership</li>
-                <li className="text-zinc-300">🔧 Regulated Product Delivery</li>
+                <li className="text-zinc-200 text-base font-medium">🚀 0→1 Product Launches</li>
+                <li className="text-zinc-200 text-base font-medium">⚡ Rapid Prototyping & MVPs</li>
+                <li className="text-zinc-200 text-base font-medium">📊 Data-Driven Decision Making</li>
+                <li className="text-zinc-200 text-base font-medium">🎯 Cross-Functional Leadership</li>
+                <li className="text-zinc-200 text-base font-medium">🔧 Regulated Product Delivery</li>
               </ul>
             </div>
           </div>

@@ -1,10 +1,10 @@
 # Shekhar Sharma - Portfolio
 
-Senior Product Manager & Builder specializing in GenAI, SaaS platforms, and vibecoding.
+Senior Product Manager & Builder specializing in GenAI, SaaS platforms, and rapid prototyping.
 
 ## About This Portfolio
 
-This portfolio showcases my vibecoding journey - building production-ready applications as a PM without a traditional dev team. It highlights my experience at Deloitte, Pfizer, Kroger, and Eli Lilly, along with the Smart Release Planner I built.
+This portfolio showcases my builder journey - leveraging AI to ship production-ready applications independently as a PM. It highlights my experience at Deloitte, Pfizer, Kroger, and Eli Lilly, along with the Smart Release Planner I built.
 
 ## Tech Stack
 

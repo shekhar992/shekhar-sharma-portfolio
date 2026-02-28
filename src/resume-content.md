@@ -11,7 +11,7 @@
 
 - Led GenAI platform serving 500+ medical researchers | Reduced insight time 50% | Secured $200K funding
 - Scaled SAMD patient app to 3,000 users in 8 weeks (3x faster than target) | Zero compliance violations
-- Built and shipped PI Planner SaaS tool in 3 weeks using AI-powered vibecoding | Live on Vercel
+- Built and shipped PI Planner SaaS tool independently in 3 weeks, leveraging AI as development partner | Live on Vercel
 
 ---
 
@@ -68,7 +68,7 @@
 
 - Built and deployed full-stack release planning SaaS tool in 3 weeks using React, TypeScript, and AI-assisted development (GitHub Copilot); achieved 500+ hours of simulated team capacity analysis.
 - Engineered release confidence scoring algorithm integrating team capacity, PTO, holidays, and velocity trends to predict delivery feasibility with 85% accuracy.
-- Designed and prototyped complete UX using Figma Make and vibecoding techniques, eliminating need for separate dev team.
+- Designed and prototyped complete UX using Figma and AI-assisted development, building independently without a separate dev team.
 
 ---
 
