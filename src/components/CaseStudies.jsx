@@ -77,7 +77,7 @@ const CaseStudies = () => {
             <h3 className="text-xl font-semibold text-white mb-4">Why Three Deloitte Stories?</h3>
             <p className="text-zinc-300 leading-relaxed mb-4">
               After gaining foundational PM experience at BSE and CRMNEXT, I joined Deloitte specifically because 
-              <strong className="text-white"> Fortune 500 clients gave me access to three distinct PM challenges</strong> 
+              <strong className="text-white"> Fortune 500 clients gave me access to three distinct PM challenges</strong>{' '}
               that most PMs don't get to experience in one career:
             </p>
             <div className="space-y-4">
