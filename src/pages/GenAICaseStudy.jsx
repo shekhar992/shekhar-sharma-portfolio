@@ -77,7 +77,7 @@ const GenAICaseStudy = () => {
       />
 
       {/* Header */}
-      <div className="sticky top-14 bg-black/80 backdrop-blur-xl border-b border-zinc-800 z-40">
+      <div className="sticky top-14 bg-black/95 backdrop-blur-sm border-b border-zinc-800 z-40">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link 
             to="/"

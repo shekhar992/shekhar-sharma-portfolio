@@ -46,8 +46,7 @@ export default function Journey() {
           {steps.map((step, idx) => (
             <div 
               key={idx} 
-              className="group relative flex items-start gap-6 animate-fadeInUp"
-              style={{ animationDelay: `${idx * 0.15}s` }}
+              className="group relative flex items-start gap-6"
             >
               {/* Icon */}
               <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">

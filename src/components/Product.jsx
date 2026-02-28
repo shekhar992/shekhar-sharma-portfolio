@@ -134,6 +134,10 @@ export default function Product() {
                         src={`/screenshots/capability-${num}.png`}
                         alt={`Smart Release Planner - Capability ${num}`}
                         className="w-full rounded-3xl"
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="400"
                       />
                     </div>
                   </div>
@@ -146,6 +150,10 @@ export default function Product() {
                         src={`/screenshots/capability-${num}.png`}
                         alt={`Smart Release Planner - Capability ${num}`}
                         className="w-full rounded-3xl"
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="400"
                       />
                     </div>
                   </div>
@@ -168,7 +176,7 @@ export default function Product() {
 
         {/* Collapsible Details Section */}
         {showDetails && (
-          <div className="space-y-20 animate-fadeInUp">
+          <div className="space-y-20">
             {/* Why I Built It - Origin Story */}
             <div className="text-center">
               <h3 className="text-4xl sm:text-5xl font-semibold mb-6">
