@@ -110,7 +110,7 @@ const CaseStudies = () => {
               </div>
             </div>
             <p className="text-zinc-400 text-sm mt-6 italic">
-              These stories showcase versatility: I can prototype fast (GenAI), scale reliably (Kroger), 
+              These stories showcase versatility: I can prototype fast (GenAI), scale reliably (Retail Platform), 
               and navigate regulatory constraints (Healthcare)—all essential for a future AI Product Leader.
             </p>
           </div>

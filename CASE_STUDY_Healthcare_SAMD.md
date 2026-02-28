@@ -12,7 +12,7 @@
 
 ## Executive Summary
 
-When Eli Lilly's insulin dose recommendation app faced patient drop-offs during a critical 3,000-patient marketing campaign, the stakes were high: **$2 million in penalties** if the FDA-approved app wasn't ready on time. The 24-step onboarding flow was overwhelming patients, especially those already enrolled through marketing with pre-existing data.
+When the pharmaceutical company's insulin dose recommendation app faced patient drop-offs during a critical 3,000-patient marketing campaign, the stakes were high: **$2 million in penalties** if the FDA-approved app wasn't ready on time. The 24-step onboarding flow was overwhelming patients, especially those already enrolled through marketing with pre-existing data.
 
 As Product Manager for this **SAMD Class II medical device**, I led a high-stakes redesign under FDA regulatory constraints where every screen change required Human Factor studies and compliance validation. By identifying redundant data collection in the marketing cohort, I **reduced 24 screens to 5** for pre-existing patients—but stakeholders initially resisted due to compliance concerns.
 
@@ -23,14 +23,14 @@ As Product Manager for this **SAMD Class II medical device**, I led a high-stake
 ## Context: Life-Critical Product Development
 
 ### The Product
-Eli Lilly's SAMD (Software as a Medical Device) platform consisted of two interconnected apps:
+The client's SAMD (Software as a Medical Device) platform consisted of two interconnected apps:
 1. **Insulin Dose Recommendation Engine** (SAMD Class II): Bluetooth-enabled glucose monitor + FDA-regulated dose calculator providing life-critical insulin recommendations
 2. **Medication Adherence Onboarding**: Mobile app guiding patients through setup, profile creation, device pairing, and treatment plan configuration
 
 Unlike typical consumer apps where bugs are fixable with hotfixes, **every feature change required Human Factor studies**, FDA documentation, and formal validation. A poorly designed flow didn't just hurt metrics—it could compromise patient safety.
 
 ### The Business Context
-Eli Lilly was launching an aggressive marketing campaign targeting **3,000 Type 1 Diabetes patients** who had shown interest through pre-enrollment forms, call center interactions, and healthcare provider referrals. These patients had already provided:
+The pharmaceutical company was launching an aggressive marketing campaign targeting **3,000 Type 1 Diabetes patients** who had shown interest through pre-enrollment forms, call center interactions, and healthcare provider referrals. These patients had already provided:
 - Medical history and current medications
 - Insurance information and provider details  
 - Contact preferences and communication consent
@@ -51,7 +51,7 @@ When I joined, the 24-step onboarding flow had been designed conservatively with
 ### The Stakes
 Two pressures converged:
 1. **FDA Approval Timeline**: The dose recommendation algorithm's FDA clearance was progressing faster than expected, with approval projected in 16 weeks instead of 24
-2. **Penalty Clause**: Eli Lilly's contract with the marketing vendor included a **$2 million penalty** if the app wasn't ready to onboard the 3,000 pre-enrolled patients when FDA approval came through
+2. **Penalty Clause**: The client's contract with the marketing vendor included a **$2 million penalty** if the app wasn't ready to onboard the 3,000 pre-enrolled patients when FDA approval came through
 
 Leadership's message was clear: **Speed up onboarding without violating compliance**—no small ask in a regulated medical device environment.
 
@@ -81,7 +81,7 @@ The insight: **We didn't need to reduce 24 screens universally—just for the 3,
 
 ### Validation with Patients
 I shadowed 6 Type 1 Diabetes patients during onboarding (part of our regular Human Factor study):
-- **5 out of 6** expressed frustration when asked to re-enter information they'd "already told someone at Eli Lilly"
+- **5 out of 6** expressed frustration when asked to re-enter information they'd "already told someone"
 - **4 out of 6** abandoned mid-flow and later resumed after support calls
 - **3 out of 6** explicitly said, "Why are you asking me this again?"
 
@@ -180,7 +180,7 @@ All screens reverted to default placeholder text ("Lorem ipsum"), broke translat
 1. **Owned it immediately**: Called the engineering lead (11 PM IST) and compliance lead (8 AM EST) to disclose the mistake
 2. **Worked overnight**: Manually restored content from our last backup (6 hours), re-imported translations (2 hours), and validated every screen against our compliance documentation (3 hours)
 3. **Fixed by morning**: Had a working staging build 14 hours later before the client saw anything broken
-4. **Disclosed to client transparently**: Once it was sorted, informed Eli Lilly's program manager about the incident, what caused it, and the process improvements we'd implement (adding confirmation modals to destructive actions, better button labels)
+4. **Disclosed to client transparently**: Once it was sorted, informed the client's program manager about the incident, what caused it, and the process improvements we'd implement (adding confirmation modals to destructive actions, better button labels)
 
 **Client's Reaction:**  
 Initially uncomfortable ("How did this happen?"), but appreciated the **ownership and speed of resolution**. The compliance lead later told me this built trust—many vendors try to hide mistakes, but we showed we could handle crises responsibly.
@@ -205,7 +205,7 @@ We deployed the 5-screen flow to the 3,000 pre-enrolled marketing patients in **
 
 **Patient Satisfaction (Post-Onboarding Survey, n=450):**
 - 89% rated onboarding experience as "Easy" or "Very Easy" (vs. 64% for 24-screen flow)
-- 76% appreciated pre-filled data: "Felt like Eli Lilly already knew me"
+- 76% appreciated pre-filled data: "Felt like they already knew me"
 - 12% still wanted to review medical data manually (we added an "Edit My Profile" option post-launch)
 
 ### Compliance & Audit Performance

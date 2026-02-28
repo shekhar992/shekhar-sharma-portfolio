@@ -20,7 +20,7 @@
 ### Deloitte Studios -- Deloitte USI
 **April 2019 -- Present**
 
-#### Senior Product Manager -- Pfizer GenAI Knowledge Mining Platform
+#### Senior Product Manager -- Pharmaceutical GenAI Knowledge Mining Platform
 *2023 -- Present*
 
 - Delivered 10+ major features across 4 quarterly releases, reducing researcher query-to-insight time from 12 hours to 6 hours and driving 40% increase in daily active users (500+ researchers).
@@ -29,7 +29,7 @@
 - Launched advanced search with semantic filtering and citation tracking, increasing platform retention from 60% to 85% and enabling $1.2M contract expansion.
 - Established quarterly PI planning process and backlog governance framework, improving sprint predictability from 65% to 90%.
 
-#### Platform Product Manager -- Kroger Mobile Platform
+#### Platform Product Manager -- Retail Mobile Platform
 *2022 -- 2023*
 
 - Accelerated feature rollout by 30% through modular API architecture and reusable platform components, enabling 12 new capabilities across 15,000 frontline devices in 8 months.
@@ -37,7 +37,7 @@
 - Improved frontline task efficiency by 20% (saving 45 minutes per worker per week) through workflow optimization and UX collaboration on inventory scanning flows.
 - Transformed release cadence from monthly to bi-weekly sprints while maintaining 98% uptime, doubling deployment velocity.
 
-#### Product Owner -- Eli Lilly SAMD Applications
+#### Product Owner -- Healthcare SAMD Applications
 *2019 -- 2022*
 
 - Scaled patient onboarding to 3,000 users in 8 weeks vs 24-week target (3x faster), enabling early clinical trial start and preventing $2M delay penalty.
@@ -52,7 +52,7 @@
 - Increased platform adoption by 35% across 8 banking clients through structured onboarding program and configuration optimization.
 - Led 20+ client requirement workshops translating business needs into CRM configurations, reducing customization time by 40%.
 
-### Associate Product Owner -- Bombay Stock Exchange
+### Associate Product Owner -- Financial Exchange
 **2016 -- 2017**
 
 - Coordinated UAT across 5 internal digital platform releases, ensuring 98% defect-free deployment rate.

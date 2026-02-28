@@ -4,7 +4,7 @@ Senior Product Manager & Builder specializing in GenAI, SaaS platforms, and rapi
 
 ## About This Portfolio
 
-This portfolio showcases my builder journey - leveraging AI to ship production-ready applications independently as a PM. It highlights my experience at Deloitte, Pfizer, Kroger, and Eli Lilly, along with the Smart Release Planner I built.
+This portfolio showcases my builder journey - leveraging AI to ship production-ready applications independently as a PM. It highlights my experience at Deloitte across pharmaceutical, retail, and healthcare sectors, along with the Smart Release Planner I built.
 
 ## Tech Stack
 

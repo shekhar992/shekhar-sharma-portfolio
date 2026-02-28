@@ -1,6 +1,6 @@
 # Case Study: Building a Platform to Scale 15,000 Retail Devices
 
-**Role:** Platform Product Manager | **Company:** Deloitte (Retail Client: Kroger) | **Timeline:** 2022 - 2023 | **Read Time:** 8 min
+**Role:** Platform Product Manager | **Company:** Deloitte (Retail Client) | **Timeline:** 2022 - 2023 | **Read Time:** 8 min
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## 1. Context: Spotting the Pattern
 
-When I joined the Kroger retail modernization project at Deloitte in 2022, I noticed something odd during sprint planning.
+When I joined the retail client's modernization project at Deloitte in 2022, I noticed something odd during sprint planning.
 
 **App Team A** was building an auto-allocation feature to assign tasks based on available workers.
 
@@ -134,7 +134,7 @@ Instead of arguing priority in every sync, teams would **pre-assess their reques
 
 ### The Scaling Challenge (100 → 200 Stores)
 
-As Kroger expanded from 100 stores to 200 stores, we hit a wall.
+As the retail client expanded from 100 stores to 200 stores, we hit a wall.
 
 **The symptoms:**
 - Slow app response times
@@ -324,10 +324,10 @@ That requires:
 ## Interview Talking Points
 
 ### 30-second version:
-"At Kroger, I built a shared platform to eliminate duplicate backend work across 2 frontline apps serving 15,000 devices in 200 stores. We doubled deployment velocity, reduced crash rates from 4.2% to 1.1%, and saved 45 minutes per worker per week—all while scaling from 100 to 200 stores."
+"At the retail client, I built a shared platform to eliminate duplicate backend work across 2 frontline apps serving 15,000 devices in 200 stores. We doubled deployment velocity, reduced crash rates from 4.2% to 1.1%, and saved 45 minutes per worker per week—all while scaling from 100 to 200 stores."
 
 ### 2-minute version:
-"When I joined the Kroger modernization project, I noticed two app teams were independently building the same features with no communication. I pitched a platform approach: build common components once, serve both teams.
+"When I joined the retail client's modernization project, I noticed two app teams were independently building the same features with no communication. I pitched a platform approach: build common components once, serve both teams.
 
 It took 4-5 months to get buy-in—clients were hesitant about the unknown. We piloted in a new store, proved the value, and scaled from there.
 
@@ -355,14 +355,14 @@ What I learned: Platform PM work is about enabling others to move faster. You do
 
 ## Meta: How This Case Study Complements GenAI Story
 
-**GenAI Platform (Pfizer):**
+**GenAI Platform (Pharmaceutical):**
 - Innovation under ambiguity
 - 0→1 product building
 - Rapid prototyping securing $200K funding
 - Research-first approach (trust over speed)
 - Handling shutdown with grace
 
-**Kroger Platform (Retail):**
+**Retail Platform:**
 - Operational excellence at scale
 - 1→N platform thinking
 - Infrastructure optimization saving $500K productivity loss
@@ -370,11 +370,11 @@ What I learned: Platform PM work is about enabling others to move faster. You do
 - Building systems that outlive you
 
 **Together they show:**
-- **Strategic range:** Innovation (GenAI) + Execution (Kroger)
+- **Strategic range:** Innovation (GenAI) + Execution (Retail Platform)
 - **Stakeholder depth:** Researchers + Engineers + Frontline Workers + Business
 - **Technical breadth:** AI/ML + Data Infrastructure + Mobile + Compliance
-- **Scale experience:** 200 users (GenAI) + 15,000 devices (Kroger)
+- **Scale experience:** 200 users (GenAI) + 15,000 devices (Retail Platform)
 
 **Interview positioning:**
 
-"My Pfizer work shows I can innovate in ambiguous spaces. My Kroger work shows I can execute at scale with operational rigor. Both required deep stakeholder alignment, but different muscles: GenAI needed trust-building with researchers; Kroger needed coordinating across app teams and change management with frontline workers."
+"My pharmaceutical work shows I can innovate in ambiguous spaces. My retail work shows I can execute at scale with operational rigor. Both required deep stakeholder alignment, but different muscles: GenAI needed trust-building with researchers; Retail Platform needed coordinating across app teams and change management with frontline workers."

@@ -214,7 +214,7 @@ export default function HealthcareCaseStudy() {
           
           <CalloutCard variant="info" className="mb-8">
             <p className="text-lg leading-relaxed">
-              When Eli Lilly's insulin dose recommendation app faced patient drop-offs during a critical 3,000-patient marketing campaign, the stakes were high: <strong className="text-emerald-400">$2 million in penalties</strong> if the FDA-approved app wasn't ready on time.
+              When the pharmaceutical company's insulin dose recommendation app faced patient drop-offs during a critical 3,000-patient marketing campaign, the stakes were high: <strong className="text-emerald-400">$2 million in penalties</strong> if the FDA-approved app wasn't ready on time.
             </p>
           </CalloutCard>
 
@@ -275,7 +275,7 @@ export default function HealthcareCaseStudy() {
             <div>
               <h3 className="text-xl font-semibold text-white mb-3">The Product</h3>
               <p className="text-zinc-300 leading-relaxed">
-                Eli Lilly's SAMD (Software as a Medical Device) platform consisted of two interconnected apps:
+                The client's SAMD (Software as a Medical Device) platform consisted of two interconnected apps:
               </p>
               <ul className="list-disc list-inside space-y-2 text-zinc-300 mt-3">
                 <li><strong className="text-white">Insulin Dose Recommendation Engine</strong> (SAMD Class II): Bluetooth-enabled glucose monitor + FDA-regulated dose calculator providing life-critical insulin recommendations</li>
@@ -292,7 +292,7 @@ export default function HealthcareCaseStudy() {
             <div>
               <h3 className="text-xl font-semibold text-white mb-3">The Business Context</h3>
               <p className="text-zinc-300 leading-relaxed">
-                Eli Lilly was launching an aggressive marketing campaign targeting <strong className="text-white">3,000 Type 1 Diabetes patients</strong> who had shown interest through pre-enrollment forms, call center interactions, and healthcare provider referrals. These patients had already provided:
+                The pharmaceutical company was launching an aggressive marketing campaign targeting <strong className="text-white">3,000 Type 1 Diabetes patients</strong> who had shown interest through pre-enrollment forms, call center interactions, and healthcare provider referrals. These patients had already provided:
               </p>
               <ul className="list-disc list-inside space-y-2 text-zinc-300 mt-3">
                 <li>Medical history and current medications</li>
@@ -439,7 +439,7 @@ export default function HealthcareCaseStudy() {
               <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 space-y-3">
                 <div className="flex gap-3">
                   <div className="text-emerald-400 font-bold text-lg">5/6</div>
-                  <div className="text-zinc-300 text-sm">Expressed frustration when asked to re-enter information they'd "already told someone at Eli Lilly"</div>
+                  <div className="text-zinc-300 text-sm">Expressed frustration when asked to re-enter information they'd "already told someone"</div>
                 </div>
                 <div className="flex gap-3">
                   <div className="text-emerald-400 font-bold text-lg">4/6</div>
@@ -852,7 +852,7 @@ export default function HealthcareCaseStudy() {
                     <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
                       <div className="h-full bg-gradient-to-r from-emerald-500 to-teal-500" style={{ width: '76%' }}></div>
                     </div>
-                    <span className="text-xs text-zinc-500">"Felt like Eli Lilly already knew me"</span>
+                    <span className="text-xs text-zinc-500">"Felt like they already knew me"</span>
                   </div>
                   <div>
                     <div className="flex justify-between items-center mb-2">
