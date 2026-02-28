@@ -7,6 +7,11 @@ export default function KrogerCaseStudy() {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
+    // Force scroll to top with multiple attempts
+    window.scrollTo(0, 0)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+    
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight - windowHeight;
@@ -204,7 +209,7 @@ export default function KrogerCaseStudy() {
 
             <div className="prose prose-invert prose-lg max-w-none space-y-6">
               <p className="text-zinc-300 leading-relaxed">
-                When I joined the Kroger retail modernization project at Deloitte in 2022, I noticed something odd during sprint planning.
+                When I joined the retail client's modernization project at Deloitte in 2022, I noticed something odd during sprint planning.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 not-prose">
@@ -424,7 +429,7 @@ export default function KrogerCaseStudy() {
               <h3 className="text-2xl font-semibold text-white">The Scaling Challenge (100 → 200 Stores)</h3>
 
               <p className="text-zinc-300 leading-relaxed">
-                As Kroger expanded from 100 stores to 200 stores, we hit a wall.
+                As the client expanded from 100 stores to 200 stores, we hit a wall.
               </p>
 
               <div className="grid md:grid-cols-3 gap-4 not-prose">

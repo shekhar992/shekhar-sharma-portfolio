@@ -7,7 +7,10 @@ const GenAICaseStudy = () => {
   const [readProgress, setReadProgress] = useState(0)
 
   useEffect(() => {
+    // Force scroll to top with multiple attempts
     window.scrollTo(0, 0)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
     
     const handleScroll = () => {
       // Calculate read progress

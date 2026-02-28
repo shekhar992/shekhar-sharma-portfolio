@@ -82,7 +82,7 @@ PREVIOUS ROLES:
    - Promoted to enterprise accounts—re-imagined customer service journey for India's largest insurance provider
    - Led 20+ product demos and requirement workshops
 
-4. Associate Product Owner - Bombay Stock Exchange (2016-2017):
+4. Associate Product Owner - Financial Exchange (2016-2017):
    - 98% defect-free deployment rate across 5 releases
    - Reduced requirement clarification time by 30%
 

@@ -15,6 +15,7 @@ export default function About() {
         '🚀 Prototyping: Secured $200K funding by building 3 rapid MVPs in 2 weeks using AI no-code tools',
       ],
       impact: 'Query-to-insight time: 12h → 6h • 40% increase in daily active users (500+ researchers) • Platform retention: 60% → 85% • Enabled $1.2M contract expansion',
+      learning: 'Failed: Initially over-designed UI with too many features—users ignored complex dashboards. Learning: Start simple (search-first), then iterate based on usage patterns.',
       caseStudyLink: '/case-study/genai-platform',
     },
     {
@@ -29,6 +30,7 @@ export default function About() {
         '🚀 Velocity: Transformed release cadence from monthly to bi-weekly while maintaining 98% uptime',
       ],
       impact: 'Frontline efficiency +20% (45 min saved per worker/week) • 12 capabilities across 15K devices • Deployment velocity doubled',
+      learning: 'Failed: Auto-allocation logic assigned tasks to workers on day off, causing stock issues. Learning: Shadow mode testing for platform features that affect multiple apps.',
       caseStudyLink: '/case-study/kroger-platform',
     },
     {
@@ -43,6 +45,8 @@ export default function About() {
         '🚀 Collaboration: Led PI planning across clinical, regulatory, and engineering teams in 3 time zones—92% sprint velocity',
       ],
       impact: '3,000 users in 8 weeks (vs 24-week target) • Completion rate: 72% → 94% • 50% fewer steps (24 → 12) • Zero FDA violations',
+      learning: 'Failed: First redesign attempt kept too many "nice-to-have" steps due to stakeholder pressure. Learning: Ruthlessly prioritize only compliance-critical steps—users vote with completion rates.',
+      caseStudyLink: '/case-study/healthcare-samd',
     },
     {
       company: 'CRMNEXT',
@@ -56,9 +60,10 @@ export default function About() {
         '🚀 Client Success: Led 20+ product demos and requirement workshops translating business needs into CRM solutions',
       ],
       impact: 'End-to-end ownership of SMB lead conversions • Promoted to enterprise accounts • Re-designed CS journey for India\'s largest insurer',
+      learning: 'Failed: Over-customized CRM for initial clients, creating maintenance debt. Learning: Build configurable vs custom—scalability beats one-off perfection.',
     },
     {
-      company: 'Bombay Stock Exchange',
+      company: 'Financial Exchange',
       role: 'Associate Product Owner',
       period: '2016 - 2017',
       problem: 'Trading platform releases had defects causing downtime—impacting revenue and operations',
@@ -69,6 +74,7 @@ export default function About() {
         '🚀 Efficiency: Reduced requirement clarification time by 30% through clear process docs',
       ],
       impact: '98% defect-free deployments • 5 successful UAT releases • 30% faster requirement clarification',
+      learning: 'Failed: Early documentation was too technical—business stakeholders couldn\'t follow. Learning: Write for your audience, not your expertise level.',
     },
   ];
 
@@ -130,6 +136,14 @@ export default function About() {
                 <p className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-3">Impact</p>
                 <p className="text-white font-semibold text-base leading-relaxed">{exp.impact}</p>
               </div>
+
+              {/* Learning / Failure */}
+              {exp.learning && (
+                <div className="pt-6 border-t border-zinc-800 mt-6">
+                  <p className="text-sm font-semibold text-amber-400 uppercase tracking-wider mb-3">What Didn't Work</p>
+                  <p className="text-zinc-300 text-base leading-relaxed italic">{exp.learning}</p>
+                </div>
+              )}
 
               {/* Case Study CTA */}
               {exp.caseStudyLink && (

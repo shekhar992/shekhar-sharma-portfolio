@@ -22,7 +22,7 @@ const CaseStudies = () => {
     {
       id: 'kroger-platform',
       title: 'Scaling 15,000 Retail Devices with Platform Thinking',
-      company: 'Deloitte (Kroger)',
+      company: 'Deloitte (Retail)',
       hook: 'How I eliminated duplicate backend work across 2 frontline apps, doubled deployment velocity, and saved 45 minutes per worker per week while scaling 100 → 200 stores.',
       metrics: [
         { value: '30%', label: 'Faster delivery' },
@@ -35,19 +35,19 @@ const CaseStudies = () => {
       published: true
     },
     {
-      id: 'coming-soon-2',
-      title: 'FDA-Compliant Digital Health at Scale',
+      id: 'healthcare-samd',
+      title: 'Healthcare SAMD: Regulatory PM Excellence',
       company: 'Deloitte (Healthcare)',
-      hook: 'Coming soon: How I simplified 24-step onboarding to 12 steps while maintaining FDA compliance and scaling 3x faster than planned.',
+      hook: 'How I redesigned 24-screen FDA-regulated onboarding to 5 screens, delivered 3,000 patients in 8 weeks (3x faster), prevented $2M penalty, with zero FDA violations.',
       metrics: [
-        { value: '3,000', label: 'Users in 8 weeks' },
-        { value: '72% → 94%', label: 'Completion rate' },
+        { value: '3x faster', label: '8 weeks vs 24 weeks' },
+        { value: '94%', label: 'Completion rate' },
         { value: '$2M', label: 'Penalty prevented' }
       ],
-      skills: ['Regulatory PM', 'UX Optimization', 'Compliance', 'FDA 21 CFR Part 11'],
-      readTime: 'Coming soon',
+      skills: ['Regulatory PM', 'FDA Compliance', 'Stakeholder Negotiation', 'Patient Safety'],
+      readTime: '12 min',
       gradient: 'from-emerald-500 to-teal-500',
-      published: false
+      published: true
     }
   ]
 
@@ -69,6 +69,51 @@ const CaseStudies = () => {
             Beyond bullet points and metrics. These case studies reveal my strategic thinking, 
             decision-making process, failures, and what I learned from each project.
           </p>
+        </div>
+
+        {/* Why Three Deloitte Stories */}
+        <div className="mb-16 max-w-4xl mx-auto">
+          <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8">
+            <h3 className="text-xl font-semibold text-white mb-4">Why Three Deloitte Stories?</h3>
+            <p className="text-zinc-300 leading-relaxed mb-4">
+              After gaining foundational PM experience at BSE and CRMNEXT, I joined Deloitte specifically because 
+              <strong className="text-white"> Fortune 500 clients gave me access to three distinct PM challenges</strong> 
+              that most PMs don't get to experience in one career:
+            </p>
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-purple-600/20 flex items-center justify-center">
+                  <span className="text-purple-400 font-bold">1</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-white mb-1">Innovation PM (Pharma GenAI)</div>
+                  <div className="text-sm text-zinc-400">0→1 AI platform building—rapid prototyping, securing funding, scaling broken products</div>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-blue-600/20 flex items-center justify-center">
+                  <span className="text-blue-400 font-bold">2</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-white mb-1">Scale PM (Retail Platform)</div>
+                  <div className="text-sm text-zinc-400">Operational excellence across 15K devices—platform thinking, reliability, change management</div>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-emerald-600/20 flex items-center justify-center">
+                  <span className="text-emerald-400 font-bold">3</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-white mb-1">Regulatory PM (Healthcare SAMD)</div>
+                  <div className="text-sm text-zinc-400">FDA compliance + patient safety—stakeholder negotiation under pressure, zero violations</div>
+                </div>
+              </div>
+            </div>
+            <p className="text-zinc-400 text-sm mt-6 italic">
+              These stories showcase versatility: I can prototype fast (GenAI), scale reliably (Kroger), 
+              and navigate regulatory constraints (Healthcare)—all essential for a future AI Product Leader.
+            </p>
+          </div>
         </div>
 
         {/* Case Study Cards */}

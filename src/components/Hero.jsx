@@ -2,12 +2,28 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-12 relative">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 sm:px-8 lg:px-12 relative pt-24">
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-950 via-black to-black opacity-60"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center space-y-12">
+          {/* Profile Photo - Circular with subtle border */}
+          <div className="flex justify-center animate-fadeIn">
+            <div className="relative">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-zinc-800/50 shadow-2xl">
+                <img 
+                  src="/profile-photo.jpg" 
+                  alt="Shekhar Sharma" 
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: 'center center' }}
+                />
+              </div>
+              {/* Subtle glow effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-2xl -z-10"></div>
+            </div>
+          </div>
+
           {/* Status Badge - Apple style */}
           <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800/50 rounded-full text-sm font-medium animate-fadeIn">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
@@ -17,17 +33,17 @@ export default function Hero() {
 
           {/* Massive Headline - Apple style */}
           <h1 className="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-semibold leading-[0.95] tracking-tight animate-fadeInUp text-white" style={{ animationDelay: '0.1s' }}>
-            Product Manager.
+            Curious Visionary.
             <br />
-            Builder.
+            Fast Builder.
             <br />
-            <span className="text-zinc-500">Problem Solver.</span>
+            <span className="text-zinc-500">Deep Thinker.</span>
           </h1>
 
           {/* Clean Subheadline */}
           <p className="text-xl sm:text-2xl lg:text-3xl text-zinc-400 max-w-4xl mx-auto font-normal leading-relaxed animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-            10 years of shipping products for Fortune 500 clients.<br className="hidden sm:block" />
-            <span className="text-white">Built and scaled at Deloitte across healthcare, retail, and pharmaceutical sectors.</span>
+            Product Manager using AI to ship faster—from rapid prototypes to production scale.<br className="hidden sm:block" />
+            <span className="text-white">10 years building for Fortune 500 across healthcare, retail, and pharmaceutical sectors.</span>
           </p>
 
           {/* Clean CTAs - Apple style */}
