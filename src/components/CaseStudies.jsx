@@ -5,7 +5,7 @@ const CaseStudies = () => {
   const caseStudies = [
     {
       id: 'genai-platform',
-      title: 'Transforming Pharmaceutical Research with GenAI',
+      title: 'Transforming Life Sciences Research with GenAI',
       company: 'Deloitte (Life Sciences)',
       hook: 'How I scaled a broken AI platform from 5 to 200 users, secured $200K funding through rapid prototyping, and learned vital lessons when the project shut down.',
       metrics: [
@@ -86,7 +86,7 @@ const CaseStudies = () => {
                   <span className="text-purple-400 font-bold">1</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-white mb-1">Innovation PM (Pharma GenAI)</div>
+                  <div className="font-semibold text-white mb-1">Innovation PM (Life Sciences GenAI)</div>
                   <div className="text-sm text-zinc-400">0→1 AI platform building—rapid prototyping, securing funding, scaling broken products</div>
                 </div>
               </div>

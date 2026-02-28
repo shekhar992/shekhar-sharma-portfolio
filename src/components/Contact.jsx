@@ -32,7 +32,7 @@ export default function Contact() {
               <div className="space-y-2">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 size={20} className="text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-zinc-200"><strong className="text-white">Healthcare/Pharma AI:</strong> GenAI platforms, clinical decision support, regulated medical devices (SAMD)</span>
+                  <span className="text-zinc-200"><strong className="text-white">Healthcare/Life Sciences AI:</strong> GenAI platforms, clinical decision support, regulated medical devices (SAMD)</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 size={20} className="text-emerald-400 mt-0.5 flex-shrink-0" />

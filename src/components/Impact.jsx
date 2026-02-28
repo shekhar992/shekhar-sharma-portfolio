@@ -14,7 +14,7 @@ export default function Impact() {
             Recent wins at Deloitte
           </h2>
           <p className="text-xl sm:text-2xl text-zinc-400 max-w-3xl mx-auto">
-            Leading GenAI platform transforming pharmaceutical research workflows
+            Leading GenAI platform transforming life sciences research workflows
           </p>
         </div>
 

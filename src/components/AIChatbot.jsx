@@ -46,7 +46,7 @@ Website: https://shekhar-sharma-portfolio.vercel.app/
 Location: Mumbai, India
 
 PROFESSIONAL SUMMARY:
-10 years of product management experience with 7 years at Deloitte building products for Fortune 500 clients across pharmaceutical, retail, and healthcare sectors. Expert in GenAI/LLMs, Enterprise SaaS, Mobile Applications, and Regulated Healthcare (SAMD).
+10 years of product management experience with 7 years at Deloitte building products for Fortune 500 clients across life sciences, retail, and healthcare sectors. Expert in GenAI/LLMs, Enterprise SaaS, Mobile Applications, and Regulated Healthcare (SAMD).
 
 KEY ACHIEVEMENTS:
 - Led GenAI platform serving 500+ medical researchers, reducing insight time from 12 hours to 6 hours
@@ -54,7 +54,7 @@ KEY ACHIEVEMENTS:
 - Scaled SAMD patient app to 3,000 users in 8 weeks (3x faster than 24-week target)
 - Built and shipped PI Planner SaaS tool independently in 3 weeks, leveraging AI as development partner
 
-CURRENT ROLE - Senior Product Manager at Deloitte (Pharmaceutical GenAI Platform) - 2023-Present:
+CURRENT ROLE - Senior Product Manager at Deloitte (Life Sciences GenAI Platform) - 2023-Present:
 - Delivered 10+ major features across 4 quarterly releases
 - Reduced researcher query-to-insight time from 12 hours to 6 hours
 - Drove 40% increase in daily active users (500+ researchers)
@@ -96,7 +96,7 @@ SKILLS & EXPERTISE:
 - Tools & Prototyping: Figma, JIRA, Confluence, SQL, Miro, Amplitude, AI-Powered Prototyping, Rapid Development
 
 DOMAIN EXPERIENCE:
-Healthcare, Pharmaceutical, Retail, Financial Services, Insurance, Media
+Healthcare, Life Sciences, Retail, Financial Services, Insurance, Media
 
 KEY STRENGTHS:
 - 0→1 Product Launches

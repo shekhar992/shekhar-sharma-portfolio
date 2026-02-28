@@ -130,7 +130,7 @@ const GenAICaseStudy = () => {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Transforming Pharmaceutical Research with GenAI
+                Transforming Life Sciences Research with GenAI
               </h1>
 
               <div className="flex flex-wrap items-center gap-4 text-zinc-400 mb-8">
@@ -210,7 +210,7 @@ const GenAICaseStudy = () => {
               <h3 className="text-2xl font-semibold text-white mb-4">The Research Bottleneck</h3>
               
               <p className="text-zinc-300 leading-relaxed mb-6">
-                Medical researchers at a major pharmaceutical company were drowning in documentation. 
+                Medical researchers at a major life sciences company were drowning in documentation. 
                 To conduct literature reviews or validate hypotheses against existing clinical protocols, 
                 researchers faced a manual, time-intensive process:
               </p>
@@ -288,7 +288,7 @@ const GenAICaseStudy = () => {
                 <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-6">
                   <h4 className="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-4">The Core Challenge</h4>
                   <p className="text-zinc-300 leading-relaxed">
-                    The platform had good AI underneath—a fine-tuned LLM trained on pharmaceutical 
+                    The platform had good AI underneath—a fine-tuned LLM trained on life sciences 
                     literature—but the experience was so clunky that researchers preferred their old manual 
                     methods. My mission was to transform this prototype into a production-grade research platform.
                   </p>
@@ -434,7 +434,7 @@ const GenAICaseStudy = () => {
                     <ul className="space-y-2 text-sm text-zinc-500">
                       <li>✗ Building our own LLM (too costly, reinventing wheel)</li>
                       <li>✗ Compromising on accuracy for speed (trust would evaporate)</li>
-                      <li>✗ Caching generic responses (pharmaceutical data is too specific)</li>
+                      <li>✗ Caching generic responses (life sciences data is too specific)</li>
                     </ul>
                   </div>
                 </div>

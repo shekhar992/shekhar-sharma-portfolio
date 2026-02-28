@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function About() {
   const experience = [
     {
-      company: 'Deloitte (Pharmaceutical)',
+      company: 'Deloitte (Life Sciences)',
       role: 'Senior Product Manager',
       period: '2023 - Present',
       problem: 'Medical researchers spent 12+ hours per query manually searching clinical protocols—slowing drug development',
@@ -88,7 +88,7 @@ export default function About() {
           </h2>
           <p className="text-xl sm:text-2xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
             10 years building products for Fortune 500<br className="hidden sm:block" />
-            <span className="text-white">Healthcare • Retail • Pharmaceutical • Financial Services</span>
+            <span className="text-white">Healthcare • Retail • Life Sciences • Financial Services</span>
           </p>
         </div>
 
@@ -227,7 +227,7 @@ export default function About() {
             <div className="mt-10">
               <h3 className="text-xl font-semibold text-white mb-6">Domain Experience</h3>
               <div className="flex flex-wrap gap-2">
-                {['Healthcare', 'Pharmaceutical', 'Retail', 'Financial Services', 'Insurance', 'Media'].map((domain) => (
+                {['Healthcare', 'Life Sciences', 'Retail', 'Financial Services', 'Insurance', 'Media'].map((domain) => (
                   <span key={domain} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
                     {domain}
                   </span>

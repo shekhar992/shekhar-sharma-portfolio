@@ -45,7 +45,7 @@ export default function Hero() {
           {/* Clean Subheadline */}
           <p className="text-xl sm:text-2xl lg:text-3xl text-zinc-400 max-w-4xl mx-auto font-normal leading-relaxed">
             Product Manager using AI to ship faster—from rapid prototypes to production scale.<br className="hidden sm:block" />
-            <span className="text-white">10 years building for Fortune 500 across healthcare, retail, and pharmaceutical sectors.</span>
+            <span className="text-white">10 years building for Fortune 500 across healthcare, retail, and life sciences.</span>
           </p>
 
           {/* Clean CTAs - Apple style */}
