@@ -20,10 +20,10 @@ const HomePage = () => {
   return (
     <>
       <Hero />
+      <Impact />
       <About />
       <CaseStudies />
       <Product />
-      <Impact />
       <Contact />
       <Footer />
       <AppFloater />

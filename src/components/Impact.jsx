@@ -11,10 +11,10 @@ export default function Impact() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-24">
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-semibold mb-8 tracking-tight">
-            Recent wins at Deloitte
+            The numbers I move
           </h2>
           <p className="text-xl sm:text-2xl text-zinc-400 max-w-3xl mx-auto">
-            Leading GenAI platform transforming life sciences research workflows
+            10 years. Fortune 500. From GenAI platforms to healthcare devices.
           </p>
         </div>
 

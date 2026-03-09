@@ -7,6 +7,7 @@ import HomePage from './components/HomePage'
 const GenAICaseStudy = lazy(() => import('./pages/GenAICaseStudy'))
 const KrogerCaseStudy = lazy(() => import('./pages/KrogerCaseStudy'))
 const HealthcareCaseStudy = lazy(() => import('./pages/HealthcareCaseStudy'))
+const SmartReleasePlannerPage = lazy(() => import('./pages/SmartReleasePlannerPage'))
 
 // Loading component
 const PageLoader = () => (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/case-study/genai-platform" element={<GenAICaseStudy />} />
           <Route path="/case-study/kroger-platform" element={<KrogerCaseStudy />} />
           <Route path="/case-study/healthcare-samd" element={<HealthcareCaseStudy />} />
+          <Route path="/smart-release-planner" element={<SmartReleasePlannerPage />} />
         </Routes>
       </Suspense>
     </div>
