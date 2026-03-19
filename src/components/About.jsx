@@ -1,7 +1,10 @@
 import { Briefcase, Award, GraduationCap, ExternalLink, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 export default function About() {
+  const [headerRef, headerVisible] = useScrollAnimation()
+  const [expRef, expVisible] = useScrollAnimation()
   const experience = [
     {
       company: 'Deloitte (Life Sciences)',
@@ -79,10 +82,10 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-32 px-6 lg:px-12 bg-zinc-950">
+    <section id="about" className="py-32 px-6 lg:px-12 bg-zinc-950 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-24">
+        <div ref={headerRef} className={`text-center mb-24 scroll-hidden ${headerVisible ? 'scroll-visible' : ''}`}>
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-semibold mb-8 tracking-tight">
             Experience
           </h2>
@@ -93,7 +96,7 @@ export default function About() {
         </div>
 
         {/* Experience Timeline - Apple Card Style */}
-        <div className="space-y-8 mb-24">
+        <div ref={expRef} className={`space-y-8 mb-24 scroll-stagger ${expVisible ? 'scroll-visible' : ''}`}>
           {experience.map((exp, idx) => (
             <div 
               key={idx} 
@@ -150,7 +153,7 @@ export default function About() {
                 <div className="pt-6 border-t border-zinc-800 mt-6">
                   <Link 
                     to={exp.caseStudyLink}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-zinc-100 transition-all duration-200 group"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-black text-sm font-semibold rounded-full hover:bg-zinc-100 transition-smooth hover:scale-[1.02] group"
                   >
                     Read Full Case Study
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -172,7 +175,7 @@ export default function About() {
               <p className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-3">Product Management</p>
               <div className="flex flex-wrap gap-2">
                 {['Product Strategy', 'Roadmap Planning', 'Stakeholder Management', 'OKRs & KPIs', 'PI Planning', 'Product-Market Fit', 'User Research', 'A/B Testing', 'Go-to-Market'].map((skill) => (
-                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
+                  <span key={skill} className="px-3 py-1 bg-zinc-900 rounded-full text-xs text-zinc-200 font-medium border border-zinc-800">
                     {skill}
                   </span>
                 ))}
@@ -184,7 +187,7 @@ export default function About() {
               <p className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-3">Technical & Platforms</p>
               <div className="flex flex-wrap gap-2">
                 {['GenAI/LLMs', 'Enterprise SaaS', 'Mobile Apps (iOS/Android)', 'API Design', 'Cloud Platforms', 'SAMD Compliance', 'FDA 21 CFR Part 11', 'Data Analytics'].map((skill) => (
-                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
+                  <span key={skill} className="px-3 py-1 bg-zinc-900 rounded-full text-xs text-zinc-200 font-medium border border-zinc-800">
                     {skill}
                   </span>
                 ))}
@@ -196,7 +199,7 @@ export default function About() {
               <p className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-3">Methodologies & Frameworks</p>
               <div className="flex flex-wrap gap-2">
                 {['SAFe Agile', 'Scrum', 'Lean Product Development', 'Design Thinking', 'Jobs-to-be-Done', 'Continuous Discovery'].map((skill) => (
-                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
+                  <span key={skill} className="px-3 py-1 bg-zinc-900 rounded-full text-xs text-zinc-200 font-medium border border-zinc-800">
                     {skill}
                   </span>
                 ))}
@@ -208,7 +211,7 @@ export default function About() {
               <p className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-3">Tools & Prototyping</p>
               <div className="flex flex-wrap gap-2">
                 {['Figma', 'JIRA', 'Confluence', 'SQL', 'Miro', 'Amplitude', 'AI-Powered Prototyping', 'Rapid Development'].map((skill) => (
-                  <span key={skill} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
+                  <span key={skill} className="px-3 py-1 bg-zinc-900 rounded-full text-xs text-zinc-200 font-medium border border-zinc-800">
                     {skill}
                   </span>
                 ))}
@@ -228,7 +231,7 @@ export default function About() {
               <h3 className="text-xl font-semibold text-white mb-6">Domain Experience</h3>
               <div className="flex flex-wrap gap-2">
                 {['Healthcare', 'Life Sciences', 'Retail', 'Financial Services', 'Insurance', 'Media'].map((domain) => (
-                  <span key={domain} className="px-3 py-1.5 bg-zinc-800 rounded-full text-sm text-zinc-200 font-medium">
+                  <span key={domain} className="px-3 py-1 bg-zinc-900 rounded-full text-xs text-zinc-200 font-medium border border-zinc-800">
                     {domain}
                   </span>
                 ))}

@@ -1,6 +1,9 @@
 import { Code2, ExternalLink, Github } from 'lucide-react'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const SideBuilds = () => {
+  const [headerRef, headerVisible] = useScrollAnimation()
+  const [cardsRef, cardsVisible] = useScrollAnimation()
   const builds = [
     {
       id: 'pawan-portfolio',
@@ -14,7 +17,7 @@ const SideBuilds = () => {
         'Scoped for zero post-handoff maintenance: no CMS, no server, static by design. Ship and forget was the feature.',
       ],
       gradient: 'from-violet-500 to-indigo-500',
-      links: { live: null, github: null },
+      links: { live: 'https://pawan-raj-portfolio-tan.vercel.app/', github: null },
       status: 'Live',
     },
     {
@@ -29,7 +32,7 @@ const SideBuilds = () => {
         'Built contact infrastructure with Zod validation and Resend email early — treating the form as a security boundary, not a design afterthought.',
       ],
       gradient: 'from-orange-500 to-amber-500',
-      links: { live: null, github: null },
+      links: { live: 'https://kdp-website.vercel.app/', github: null },
       status: 'Live',
     },
     {
@@ -44,33 +47,33 @@ const SideBuilds = () => {
         'Supabase Realtime latency constraints directly influenced round timer UX — technical architecture and product decisions were inseparable.',
       ],
       gradient: 'from-rose-500 to-red-500',
-      links: { live: null, github: null },
-      status: 'In Development',
+      links: { live: 'https://todfod-thursdays.vercel.app/', github: null },
+      status: 'Live',
     },
   ]
 
   return (
-    <section id="builds" className="py-24 px-6 bg-zinc-950">
+    <section id="builds" className="py-32 px-6 lg:px-12 bg-zinc-950 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div ref={headerRef} className={`text-center mb-16 scroll-hidden ${headerVisible ? 'scroll-visible' : ''}`}>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/50 border border-zinc-800 mb-6">
             <Code2 className="w-4 h-4 text-blue-400" />
             <span className="text-sm text-zinc-400">Side Builds</span>
           </div>
 
-          <h2 className="text-5xl md:text-6xl font-semibold text-white mb-6">
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-white mb-6 tracking-tight">
             I Build to Understand
           </h2>
 
-          <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-zinc-400 max-w-3xl mx-auto">
             Outside of the day job, I build things for real people with real constraints.
             Each project sharpened a PM instinct I couldn&apos;t get from a backlog.
           </p>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={cardsRef} className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 scroll-stagger ${cardsVisible ? 'scroll-visible' : ''}`}>
           {builds.map((build) => (
             <div
               key={build.id}

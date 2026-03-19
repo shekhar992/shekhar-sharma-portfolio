@@ -1,7 +1,11 @@
 import { ArrowRight, Clock, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const CaseStudies = () => {
+  const [headerRef, headerVisible] = useScrollAnimation()
+  const [whyRef, whyVisible] = useScrollAnimation()
+  const [cardsRef, cardsVisible] = useScrollAnimation()
   const caseStudies = [
     {
       id: 'genai-platform',
@@ -52,27 +56,27 @@ const CaseStudies = () => {
   ]
 
   return (
-    <section id="case-studies" className="py-24 px-6 bg-black">
+    <section id="case-studies" className="py-32 px-6 lg:px-12 bg-black scroll-mt-24">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div ref={headerRef} className={`text-center mb-16 scroll-hidden ${headerVisible ? 'scroll-visible' : ''}`}>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/50 border border-zinc-800 mb-6">
             <Sparkles className="w-4 h-4 text-purple-400" />
             <span className="text-sm text-zinc-400">Deep Dive Case Studies</span>
           </div>
           
-          <h2 className="text-5xl md:text-6xl font-semibold text-white mb-6">
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-white mb-6 tracking-tight">
             How I Think & Build
           </h2>
           
-          <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-zinc-400 max-w-3xl mx-auto">
             Beyond bullet points and metrics. These case studies reveal my strategic thinking, 
             decision-making process, failures, and what I learned from each project.
           </p>
         </div>
 
         {/* Why Three Deloitte Stories */}
-        <div className="mb-16 max-w-4xl mx-auto">
+        <div ref={whyRef} className={`mb-16 max-w-4xl mx-auto scroll-hidden ${whyVisible ? 'scroll-visible' : ''}`} style={{ transitionDelay: '100ms' }}>
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8">
             <h3 className="text-xl font-semibold text-white mb-4">Why Three Deloitte Stories?</h3>
             <p className="text-zinc-300 leading-relaxed mb-4">
@@ -117,7 +121,7 @@ const CaseStudies = () => {
         </div>
 
         {/* Case Study Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={cardsRef} className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 scroll-stagger ${cardsVisible ? 'scroll-visible' : ''}`}>
           {caseStudies.map((study) => (
             <div
               key={study.id}

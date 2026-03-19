@@ -2,20 +2,20 @@ import { Mail, Linkedin, Github, Download, CheckCircle2, Target, Calendar } from
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 px-6 lg:px-12 bg-zinc-950">
+    <section id="contact" className="py-32 px-6 lg:px-12 bg-zinc-950 scroll-mt-24">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-5xl sm:text-6xl lg:text-7xl font-semibold mb-12 tracking-tight">
           Let's connect
         </h2>
         
-        <p className="text-2xl sm:text-3xl text-zinc-400 mb-8 leading-relaxed">
+        <p className="text-xl sm:text-2xl text-zinc-400 mb-8 leading-relaxed">
           Open to product leadership roles.
         </p>
 
         {/* Calendly CTA - primary conversion action */}
         <div className="mb-16">
           <a
-            href="https://calendly.com/sheksharma"
+            href="https://calendly.com/sharmashekhar992/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-emerald-500 text-black rounded-full text-lg font-semibold hover:bg-emerald-400 transition-smooth hover:scale-[1.02] shadow-lg shadow-emerald-500/20"
@@ -100,7 +100,7 @@ export default function Contact() {
         <div className="flex flex-wrap gap-4 justify-center mb-20">
           <a
             href="mailto:sharmashekhar992@gmail.com"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white text-black rounded-full text-base font-semibold hover:bg-zinc-100 transition-smooth hover:scale-[1.02]"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-black rounded-full text-sm font-semibold hover:bg-zinc-100 transition-smooth hover:scale-[1.02]"
           >
             <Mail size={18} />
             Email me
@@ -110,7 +110,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/sheksharma"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-zinc-700 text-white rounded-full text-base font-semibold hover:border-zinc-500 hover:bg-zinc-900/50 transition-smooth hover:scale-[1.02]"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-zinc-700 text-white rounded-full text-sm font-semibold hover:border-zinc-400 hover:bg-zinc-900/50 transition-smooth hover:scale-[1.02]"
           >
             <Linkedin size={18} />
             LinkedIn
@@ -120,7 +120,7 @@ export default function Contact() {
             href="https://github.com/shekhar992"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-zinc-700 text-white rounded-full text-base font-semibold hover:border-zinc-500 hover:bg-zinc-900/50 transition-smooth hover:scale-[1.02]"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-zinc-700 text-white rounded-full text-sm font-semibold hover:border-zinc-400 hover:bg-zinc-900/50 transition-smooth hover:scale-[1.02]"
           >
             <Github size={18} />
             GitHub
@@ -129,7 +129,7 @@ export default function Contact() {
           <a
             href="/resume.pdf"
             download
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-zinc-700 text-white rounded-full text-base font-semibold hover:border-zinc-500 hover:bg-zinc-800 transition-smooth hover:scale-[1.02]"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-zinc-700 text-white rounded-full text-sm font-semibold hover:border-zinc-400 hover:bg-zinc-800 transition-smooth hover:scale-[1.02]"
           >
             <Download size={18} />
             Resume

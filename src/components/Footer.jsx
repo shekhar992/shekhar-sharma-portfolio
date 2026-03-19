@@ -3,7 +3,7 @@ export default function Footer() {
 
   return (
     <footer className="py-16 px-6 bg-black border-t border-zinc-900 text-zinc-600 text-center">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <p className="text-sm mb-3">
           © {currentYear} Shekhar Sharma. All rights reserved.
         </p>

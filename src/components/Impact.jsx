@@ -1,4 +1,8 @@
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
+
 export default function Impact() {
+  const [titleRef, titleVisible] = useScrollAnimation()
+  const [gridRef, gridVisible] = useScrollAnimation()
   const metrics = [
     {
       value: '12h → 6h',
@@ -27,9 +31,12 @@ export default function Impact() {
   ];
 
   return (
-    <section className="py-32 px-6 lg:px-12">
+    <section className="py-32 px-6 lg:px-12 bg-black">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-24">
+        <div
+          ref={titleRef}
+          className={`text-center mb-16 scroll-hidden ${titleVisible ? 'scroll-visible' : ''}`}
+        >
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-semibold mb-8 tracking-tight">
             The numbers I move
           </h2>
@@ -38,11 +45,11 @@ export default function Impact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div ref={gridRef} className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 scroll-stagger ${gridVisible ? 'scroll-visible' : ''}`}>
           {metrics.map((metric, idx) => (
             <div
               key={idx}
-              className="bg-zinc-950 border border-zinc-800/60 rounded-2xl p-6 flex flex-col gap-3"
+              className="bg-zinc-950 border border-zinc-800/60 rounded-3xl p-6 flex flex-col gap-3"
             >
               <p className="text-4xl lg:text-5xl font-semibold text-white leading-none">{metric.value}</p>
               <p className="text-base font-semibold text-zinc-200">{metric.label}</p>
